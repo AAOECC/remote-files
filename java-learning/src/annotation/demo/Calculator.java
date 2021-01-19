@@ -3,23 +3,25 @@ package annotation.demo;
 public class Calculator {
 
     @Check
-    public String add(){
-        return("1 + 2 = " + (1+2));
+    public void add(){
+        String n = null;
+        n.toString();
+        System.out.println("1 + 2 = "+(1+2));
     }
 
     @Check
-    public String sub(){
-        return("1 - 2 = " + (1-2));
+    public void sub(){
+        System.out.println("1 - 2 = "+(1-2));
     }
 
     @Check
-    public String mul(){
-        return("1 * 2 = " + (1*2));
+    public void mul(){
+        System.out.println("1 * 2 = "+(1*2));
     }
 
     @Check
-    public String div(){
-        return("1 / 0 = " + (1/0));
+    public void div(){
+        System.out.println("1 / 0 = "+(1/0));
     }
 
     public String show(){

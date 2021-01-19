@@ -24,7 +24,7 @@ public class Worker {
                 '}';
     }
 
-
+    @Test
     public void test(){
         Worker wr = new Worker();
         working();
