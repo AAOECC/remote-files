@@ -4,6 +4,9 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
 
+/*
+    更新数据库数据
+ */
 public class JdbcDemo1 {
 
     public static void main(String[] args) throws Exception {

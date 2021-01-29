@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38726c78-dc19-4edc-a74d-83b548b78bae" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/bug.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-learning.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/junit-4.10.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/note/day_01.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/note/day_02.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/annotation/AnnoRelTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/annotation/MyAnno1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/annotation/Pro.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/annotation/Worker.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/annotation/demo/Calculator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/annotation/demo/Check.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/annotation/demo/TestCheck.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/Person.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/Student.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pro.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reflect/ReflectDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reflect/ReflectTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/PersonTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day05_JDBC/src/jdbc/JdbcDemo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/day05_JDBC/src/jdbc/JdbcDemo1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,25 +29,39 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/day05_JDBC/lib" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="SQL Dialects" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\workspace\remote-files\java-learning\day05_JDBC\lib" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.JDBCDemo2">
+  <component name="RunManager" selected="Application.JDBCDemo3">
     <configuration name="JDBCDemo2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="jdbc.JDBCDemo2" />
+      <module name="day05_JDBC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jdbc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JDBCDemo3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jdbc.JDBCDemo3" />
       <module name="day05_JDBC" />
       <extension name="coverage">
         <pattern>
@@ -88,19 +86,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PersonTest.testAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="day01" />
       <extension name="coverage">
@@ -119,13 +104,20 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JDBCDemo3" />
         <item itemvalue="Application.JDBCDemo2" />
         <item itemvalue="Application.JdbcDemo1" />
         <item itemvalue="JUnit.PersonTest.testAdd" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",ALPHA_COMPARATOR" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="38726c78-dc19-4edc-a74d-83b548b78bae" name="Default Changelist" comment="" />
@@ -135,11 +127,14 @@
       <updated>1611904106691</updated>
       <workItem from="1611904109670" duration="219000" />
       <workItem from="1611904339531" duration="5502000" />
+      <workItem from="1611914933468" duration="1845000" />
+      <workItem from="1611920062438" duration="2344000" />
+      <workItem from="1611922443859" duration="3553000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -152,5 +147,51 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="337" y="361" key="#SQL_Dialects" timestamp="1611921929122">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="337" y="361" key="#SQL_Dialects/0.0.1920.1040@0.0.1920.1040" timestamp="1611921929122" />
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611924268660">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1611924268660" />
+    <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1611924466676">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="254" height="195" key="DatabaseViewActions_Filter/0.0.1920.1040@0.0.1920.1040" timestamp="1611924466676" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1611914949474">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1611914949474" />
+    <state width="1293" height="282" key="GridCell.Tab.0.bottom" timestamp="1611924310126">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1611924310126" />
+    <state width="1293" height="282" key="GridCell.Tab.0.center" timestamp="1611924310126">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1611924310126" />
+    <state width="1293" height="282" key="GridCell.Tab.0.left" timestamp="1611924310126">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1611924310126" />
+    <state width="1293" height="282" key="GridCell.Tab.0.right" timestamp="1611924310126">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1611924310126" />
+    <state x="388" y="311" key="SettingsEditor" timestamp="1611923585256">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="388" y="311" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1611923585256" />
+    <state width="254" height="198" key="ShowFilterAction_Filter_Popup" timestamp="1611930030264">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="254" height="198" key="ShowFilterAction_Filter_Popup/0.0.1920.1040@0.0.1920.1040" timestamp="1611930030264" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1611930052874">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1611930052874" />
   </component>
 </project>
