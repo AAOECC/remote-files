@@ -37,6 +37,9 @@ public class TestCheck {
                     bw.newLine();
                     bw.write("--------------");
                     bw.newLine();
+//                    System.out.println(e.getCause());
+//                    System.out.println(e.getCause().getClass());
+//                    System.out.println(e.getMessage());
                 }
             }
         }
