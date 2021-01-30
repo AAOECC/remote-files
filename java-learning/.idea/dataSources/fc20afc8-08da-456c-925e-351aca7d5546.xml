@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="本地mysql">
-  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.18">
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.20">
     <root id="1">
       <ServerVersion>5.7.29</ServerVersion>
       <DefaultEngine>InnoDB</DefaultEngine>
       <DefaultTmpEngine>InnoDB</DefaultTmpEngine>
       <DefaultCasing>lower/lower</DefaultCasing>
     </root>
-    <schema id="2" parent="1" name="db2">
+    <schema id="2" parent="1" name="db3">
       <Collation>utf8_general_ci</Collation>
     </schema>
-    <schema id="3" parent="1" name="db3">
+    <schema id="3" parent="1" name="db4">
       <Current>1</Current>
       <Collation>utf8_general_ci</Collation>
     </schema>
@@ -726,25 +726,26 @@
     </collation>
     <user id="227" parent="1" name="dev">
       <Host>%</Host>
+      <ObjectGrants>ALL PRIVILEGES|db3
+ALL PRIVILEGES|db4
+</ObjectGrants>
     </user>
-    <table id="228" parent="3" name="account"/>
+    <table id="228" parent="3" name="user"/>
     <column id="229" parent="228" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
-      <SequenceIdentity>1</SequenceIdentity>
-      <ColumnKind>normal</ColumnKind>
+      <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="230" parent="228" name="aname">
+    <column id="230" parent="228" name="username">
       <Position>2</Position>
       <DataType>varchar(30)|0s</DataType>
       <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="231" parent="228" name="balance">
+    <column id="231" parent="228" name="PASSWORD">
       <Position>3</Position>
-      <DataType>int(11)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
+      <DataType>varchar(30)|0s</DataType>
+      <NotNull>1</NotNull>
     </column>
     <key id="232" parent="228" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
