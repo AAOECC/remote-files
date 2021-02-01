@@ -4,6 +4,7 @@
     <list default="true" id="38726c78-dc19-4edc-a74d-83b548b78bae" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/fc20afc8-08da-456c-925e-351aca7d5546.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fc20afc8-08da-456c-925e-351aca7d5546.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,12 +40,16 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/day06_dataSource_jdbcTemplate/lib" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -52,16 +57,21 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\remote-files\java-learning\day06_dataSource_jdbcTemplate\lib" />
+      <recent name="D:\workspace\remote-files\java-learning\day06_dataSource_jdbcTemplate\src" />
       <recent name="D:\workspace\remote-files\java-learning\day05_JDBC\lib" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="domain" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.JDBCDemo5">
-    <configuration name="JDBCDemo2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jdbc.JDBCDemo2" />
-      <module name="day05_JDBC" />
+  <component name="RunManager" selected="JUnit.JdbcTemplateDemo2.test1">
+    <configuration name="C3P0Demo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dataSource.c3p0.C3P0Demo1" />
+      <module name="day06_dataSource_jdbcTemplate" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="jdbc.*" />
+          <option name="PATTERN" value="dataSource.c3p0.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -69,12 +79,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JDBCDemo3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jdbc.JDBCDemo3" />
-      <module name="day05_JDBC" />
+    <configuration name="DruidDemo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dataSource.druid.DruidDemo1" />
+      <module name="day06_dataSource_jdbcTemplate" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="jdbc.*" />
+          <option name="PATTERN" value="dataSource.druid.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -82,12 +92,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JDBCDemo4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jdbc.JDBCDemo4" />
-      <module name="day05_JDBC" />
+    <configuration name="DruidDemo2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dataSource.druid.DruidDemo2" />
+      <module name="day06_dataSource_jdbcTemplate" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="jdbc.*" />
+          <option name="PATTERN" value="dataSource.druid.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -95,25 +105,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JDBCDemo5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jdbc.JDBCDemo5" />
-      <module name="day05_JDBC" />
+    <configuration name="JdbcTemplateDemo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jdbcTemplaste.JdbcTemplateDemo1" />
+      <module name="day06_dataSource_jdbcTemplate" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="jdbc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JdbcDemo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jdbc.JdbcDemo1" />
-      <module name="day05_JDBC" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="jdbc.*" />
+          <option name="PATTERN" value="jdbcTemplaste.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -134,13 +131,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JdbcTemplateDemo2.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day06_dataSource_jdbcTemplate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jdbcTemplaste.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="jdbcTemplaste" />
+      <option name="MAIN_CLASS_NAME" value="jdbcTemplaste.JdbcTemplateDemo2" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.JDBCDemo5" />
-        <item itemvalue="Application.JDBCDemo4" />
-        <item itemvalue="Application.JDBCDemo3" />
-        <item itemvalue="Application.JDBCDemo2" />
-        <item itemvalue="Application.JdbcDemo1" />
+        <item itemvalue="JUnit.JdbcTemplateDemo2.test1" />
+        <item itemvalue="Application.JdbcTemplateDemo1" />
+        <item itemvalue="Application.DruidDemo2" />
+        <item itemvalue="Application.DruidDemo1" />
+        <item itemvalue="Application.C3P0Demo1" />
       </list>
     </recent_temporary>
   </component>
@@ -165,6 +178,8 @@
       <workItem from="1611922443859" duration="3553000" />
       <workItem from="1611969659829" duration="4214000" />
       <workItem from="1611984058037" duration="7343000" />
+      <workItem from="1612140173857" duration="1963000" />
+      <workItem from="1612151961655" duration="7169000" />
     </task>
     <servers />
   </component>
