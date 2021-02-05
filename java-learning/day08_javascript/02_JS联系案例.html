@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>乘法表</title>
+</head>
+
+<style>
+    td{
+        border: 1px solid;
+    }
+</style>
+
+<script>
+    var cow = 1, rol = 1;
+    document.write("<table>");
+    while (rol <= 9){
+        document.write("<tr>")
+        for(;cow <= rol; cow++){
+            document.write("<td>")
+            document.write(rol+" * "+cow+" = "+(rol*cow));
+            document.write("</td>");
+        }
+        document.write("</tr>");
+        rol++;
+        cow = 1;
+    }
+    document.write("</table>");
+</script>
+
+<body>
+
+</body>
+</html>
