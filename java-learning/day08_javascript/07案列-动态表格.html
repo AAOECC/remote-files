@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动态表格</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin-top: 70px;
+            text-align: center;
+        }
+        table{
+            border: 1px solid;
+            margin: auto;
+            width: 30%;
+        }
+        td, th{
+            text-align: center;
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" placeholder="编号" name="id">
+        <input type="text" placeholder="姓名" name="name">
+        <input type="text" placeholder="性别" name="sex">
+        <input type="button" value="add" id="add">
+        <input type="button" value="add2" id="add2">
+    </div>
+    <div class="container">
+        <table id="table">
+            <caption>学生信息表</caption>
+            <tr>
+                <th>编号</th>
+                <th>姓名</th>
+                <th>性别</th>
+                <th>操作</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td></td>
+                <td></td>
+                <td>
+                    <a href="javascript:void(0);" onclick="del_row(this)">删除</a>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td></td>
+                <td></td>
+                <td>
+                    <a href="javascript:void(0);" onclick="del_row(this)">删除</a>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td></td>
+                <td></td>
+                <td>
+                    <a href="javascript:void(0);" onclick="del_row(this)">删除</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        //1. 获取需进行操作的对象
+        var table = document.getElementById("table");
+        var addBtn = document.getElementById("add");
+        var addBtn2 = document.getElementById("add2");
+
+        //2.删除本行操作的执行方法
+        function del_row(obj){
+            var table = obj.parentElement.parentElement.parentElement;
+            var tr = obj.parentElement.parentElement;
+            table.removeChild(tr);
+        }
+
+        //复制表格删除 a 标签
+        var a_del = document.getElementsByTagName("a")[0].cloneNode(true);
+
+        //添加行方法
+        function creat_row(){
+            //创建需要添加的 element
+            var tr = document.createElement("tr");
+            var td_id = document.createElement("td");
+            var td_name = document.createElement("td");
+            var td_sex = document.createElement("td");
+            var td_del = document.createElement("td");
+            //获取输入框内容
+            var id = document.getElementsByName("id")[0].value;
+            var name = document.getElementsByName("name")[0].value;
+            var sex = document.getElementsByName("sex")[0].value;
+
+            //td id
+            var text_id = document.createTextNode(id);
+            td_id.appendChild(text_id);
+            tr.appendChild(td_id);
+
+            //td name
+            var text_name = document.createTextNode(name);
+            td_name.appendChild(text_name);
+            tr.appendChild(td_name);
+
+            //td sex
+            var text_sex = document.createTextNode(sex);
+            td_sex.appendChild(text_sex);
+            tr.appendChild(td_sex);
+
+            //td del
+            var a_cln = a_del.cloneNode(true);
+            td_del.appendChild(a_cln);
+            tr.appendChild(td_del);
+
+            table.appendChild(tr);
+        }
+
+        //使用innerHtml 实现
+        function inner_creat() {
+            var id = document.getElementsByName("id")[0].value;
+            var name = document.getElementsByName("name")[0].value;
+            var sex = document.getElementsByName("sex")[0].value;
+            var td_del = document.createElement("td");
+
+            var tr = document.createElement("tr");
+            tr.innerHTML = "<td>"+id+"</td>"+
+                "<td>"+name+"</td>"+
+                "<td>"+sex+"</td>";
+            var a_cln = a_del.cloneNode(true);
+            td_del.appendChild(a_cln);
+            tr.appendChild(td_del);
+            table.appendChild(tr);
+
+        }
+
+        addBtn.onclick = creat_row;
+        addBtn2.onclick = inner_creat;
+    </script>
+</body>
+</html>

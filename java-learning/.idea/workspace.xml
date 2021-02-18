@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38726c78-dc19-4edc-a74d-83b548b78bae" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,37 +50,26 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/day07_html" />
+    <property name="js.last.introduce.type" value="VAR" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/day08_javascript/img/3" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\remote-files\java-learning\day08_javascript\img\3" />
+      <recent name="D:\workspace\remote-files\java-learning\day08_javascript\img\2" />
+      <recent name="D:\workspace\remote-files\java-learning\day08_javascript\img" />
+      <recent name="C:\WorkSpaces\remote-files\java-learning\day07_html" />
+      <recent name="D:\workspace\remote-files\java-learning\day06_dataSource_jdbcTemplate\lib" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="domain" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\WorkSpaces\remote-files\java-learning\day07_html" />
-      <recent name="D:\workspace\remote-files\java-learning\day06_dataSource_jdbcTemplate\lib" />
-      <recent name="D:\workspace\remote-files\java-learning\day06_dataSource_jdbcTemplate\src" />
-      <recent name="D:\workspace\remote-files\java-learning\day05_JDBC\lib" />
-    </key>
   </component>
   <component name="RunManager" selected="JUnit.JdbcTemplateDemo2.test7">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="JdbcTemplateDemo2.Test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="day06_dataSource_jdbcTemplate" />
       <extension name="coverage">
@@ -199,6 +189,26 @@
       <workItem from="1612354046402" duration="4133000" />
       <workItem from="1612396356847" duration="9986000" />
       <workItem from="1612511435487" duration="2728000" />
+      <workItem from="1612570355246" duration="1613000" />
+      <workItem from="1612771369757" duration="2245000" />
+      <workItem from="1612831858070" duration="3676000" />
+      <workItem from="1612963018581" duration="2501000" />
+      <workItem from="1613014022664" duration="618000" />
+      <workItem from="1613121782302" duration="1076000" />
+      <workItem from="1613356173153" duration="1864000" />
+      <workItem from="1613392999965" duration="7294000" />
+      <workItem from="1613451880446" duration="12725000" />
+      <workItem from="1613546682977" duration="170000" />
+      <workItem from="1613546907786" duration="70000" />
+      <workItem from="1613546990370" duration="114000" />
+      <workItem from="1613547277666" duration="124000" />
+      <workItem from="1613547495590" duration="30000" />
+      <workItem from="1613547537409" duration="55000" />
+      <workItem from="1613547826249" duration="79000" />
+      <workItem from="1613547934911" duration="329000" />
+      <workItem from="1613558604768" duration="6828000" />
+      <workItem from="1613609891819" duration="7394000" />
+      <workItem from="1613635252847" duration="596000" />
     </task>
     <servers />
   </component>

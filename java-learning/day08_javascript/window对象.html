@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>window对象</title>
+</head>
+<body>
+
+    <input id="text" type="text" value=" "><br><br>
+    <input type="button" value="打开新窗口" id="openBtn">
+    <input type="button" value="关闭新窗口" id="closeBtn">
+    <br><br>
+    <input type="button" value="clearTimeout" id="clearTimeout">
+    <input type="button" value="clearInterval" id="clearInterval">
+<script>
+    var text = document.getElementById("text");
+    var openBtn = document.getElementById("openBtn");
+    var closeBtn = document.getElementById("closeBtn");
+
+    var clearTimeout = document.getElementById("clearTimeout");
+    var clearIntervalBtn = document.getElementById("clearInterval");
+    /*
+    // 1. window 窗口方法
+
+    window.alert("hello window!");
+    alert("hello a");
+    var flag = window.confirm("exit?");
+    var result = window.prompt("please enter:");
+    text.value = result;
+
+     */
+
+    /*
+    // 2. window 打开关闭方法
+    var newWindow;
+    openBtn.onclick = function(){
+        newWindow = window.open("https://www.baidu.com");
+    }
+
+    closeBtn.onclick = function(){
+        newWindow.close();
+    }
+
+     */
+
+    /*
+    // 3. 定时器
+    // var timeout = window.setTimeout(fun, 2000);
+    // window.clearTimeout(timeout);
+    function fun(){
+        alert("Boom !! ");
+    }
+
+    var interval = setInterval(fun, 2000);
+    clearIntervalBtn.onclick = function(){
+        clearInterval(interval);
+    }
+
+     */
+//-----------------------------
+
+
+</script>
+</body>
+</html>

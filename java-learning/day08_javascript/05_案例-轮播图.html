@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图案例</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-size: 0;
+            /*background-color: green;*/
+        }
+        .img {
+            display: inline-block;
+            /*background-color: red;*/
+        }
+        #out {
+            /*background-color: blue;*/
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+<div id="out">
+    <div class="img">
+        <img src="./img/2/banner_1.jpg" alt="" id="changeImg">
+    </div>
+</div>
+
+<script>
+    //轮播图案例
+    var changeImg = document.getElementById("changeImg");
+    var num = 0;
+    function change(){
+        num = num % 3;
+        num++;
+        changeImg.src = "./img/2/banner_" + num + ".jpg";
+    }
+
+    var changeImgItl = window.setInterval(change, 2000);
+</script>
+</body>
+</html>

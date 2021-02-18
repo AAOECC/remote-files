@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单全选</title>
+    <style>
+        div{
+            text-align: center;
+        }
+        table{
+            margin: auto;
+            text-align: center;
+            border: 1px solid;
+            width: 35%;
+            margin-bottom: 20px;
+        }
+        td, th{
+            text-align: center;
+            border: 1px solid;
+        }
+        .tr_red {
+            background-color: red;
+        }
+        .tr_white {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <table id="table">
+            <caption>学生信息表</caption>
+            <tr onmouseover="tr_red(this);" onmouseout="tr_white(this);">
+                <th><input type="checkbox" class="checkbox" id=""></th>
+                <th>编号</th>
+                <th>姓名</th>
+                <th>性别</th>
+                <th>操作</th>
+            </tr>
+
+            <tr onmouseover="tr_red(this);" onmouseout="tr_white(this);">
+                <td><input type="checkbox" class="checkbox"></td>
+                <td>1</td>
+                <td>令狐冲</td>
+                <td>男</td>
+                <td><a href="javascript:void(0);">删除</a></td>
+            </tr>
+
+            <tr onmouseover="tr_red(this);" onmouseout="tr_white(this);">
+                <td><input type="checkbox" class="checkbox"></td>
+                <td>2</td>
+                <td>任我行</td>
+                <td>男</td>
+                <td><a href="javascript:void(0);">删除</a></td>
+            </tr>
+
+            <tr onmouseover="tr_red(this);" onmouseout="tr_white(this);">
+                <td><input type="checkbox" class="checkbox"></td>
+                <td>3</td>
+                <td>岳不群</td>
+                <td>?</td>
+                <td><a href="javascript:void(0);">删除</a></td>
+            </tr>
+        </table>
+        <input type="button" value="全选" id="selectAll">
+        <input type="button" value="全不选" id="unSelectAll">
+        <input type="button" value="反选" id="selectRec">
+    </div>
+
+    <script>
+        //获取操纵的对象
+        var selectAll = document.getElementById("selectAll");
+        var unSelectAll = document.getElementById("unSelectAll");
+        var selectRec = document.getElementById("selectRec");
+
+        var trs = document.getElementsByTagName("tr");
+
+        var checkboxs = document.getElementsByClassName("checkbox");
+        var box = checkboxs[0];
+
+        //鼠标覆盖变红
+        function tr_red (obj) {
+            obj.className = "tr_red";
+        }
+        function tr_white(obj) {
+            obj.className = "tr_write";
+        }
+
+        trs.forEach();
+
+        //复选框事件
+            //复选框全选
+        function select_all() {
+            for (var checkbox of checkboxs) {
+                checkbox.checked = true;
+            }
+        }
+            //复选框全不选
+        function unselect_all() {
+            for (var checkbox of checkboxs) {
+                checkbox.checked = false;
+            }
+        }
+
+        //首个复选框单击事件
+        box.onclick = function () {
+            if(box.checked === true){
+                select_all();
+            }else{
+                unselect_all();
+            }
+        }
+        //全选框单击事件
+        selectAll.onclick = select_all;
+        //全不选框单击事件
+        unSelectAll.onclick = unselect_all;
+        //反选框单击事件
+        selectRec.onclick = function () {
+            for (var checkbox of checkboxs) {
+                if (checkbox.checked === true){
+                    checkbox.checked = false;
+                } else {
+                    checkbox.checked = true;
+                }
+            }
+        }
+
+    </script>
+</body>
+</html>
