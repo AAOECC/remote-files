@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38726c78-dc19-4edc-a74d-83b548b78bae" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,22 +50,22 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="js.last.introduce.type" value="VAR" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/day08_javascript/img/3" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/day11_BootStrap" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="domain" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\WorkSpaces\remote-files\java-learning\day11_BootStrap" />
+      <recent name="C:\WorkSpaces\remote-files\java-learning\day11_BootStrap\js" />
       <recent name="D:\workspace\remote-files\java-learning\day08_javascript\img\3" />
       <recent name="D:\workspace\remote-files\java-learning\day08_javascript\img\2" />
       <recent name="D:\workspace\remote-files\java-learning\day08_javascript\img" />
-      <recent name="C:\WorkSpaces\remote-files\java-learning\day07_html" />
-      <recent name="D:\workspace\remote-files\java-learning\day06_dataSource_jdbcTemplate\lib" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="domain" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.JdbcTemplateDemo2.test7">
@@ -160,7 +159,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="StructureViewFactory">
     <option name="ACTIVE_ACTIONS" value=",ALPHA_COMPARATOR" />
   </component>
@@ -209,11 +208,12 @@
       <workItem from="1613558604768" duration="6828000" />
       <workItem from="1613609891819" duration="7394000" />
       <workItem from="1613635252847" duration="596000" />
+      <workItem from="1613642034326" duration="1940000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
