@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="38726c78-dc19-4edc-a74d-83b548b78bae" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day11_BootStrap/02_BootStarp-栅格示例.html" beforeDir="false" afterPath="$PROJECT_DIR$/day11_BootStrap/02_BootStarp-栅格示例.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day11_BootStrap/04_案例-网站首页-Bootstrap.html" beforeDir="false" afterPath="$PROJECT_DIR$/day11_BootStrap/04_案例-网站首页-Bootstrap.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,17 +70,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.JdbcTemplateDemo2.test7">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="JdbcTemplateDemo2.Test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="day06_dataSource_jdbcTemplate" />
       <extension name="coverage">
@@ -171,7 +160,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="StructureViewFactory">
     <option name="ACTIVE_ACTIONS" value=",ALPHA_COMPARATOR" />
   </component>
@@ -223,11 +212,12 @@
       <workItem from="1613642034326" duration="1940000" />
       <workItem from="1613692934502" duration="723000" />
       <workItem from="1613716432177" duration="6215000" />
+      <workItem from="1613732614172" duration="7041000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
