@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <title>Bootstrap 栅格</title>
+    <title>Bootstrap Hello</title>
 
     <!-- Bootstrap -->
     <link href="./css/bootstrap.min.css" rel="stylesheet">
@@ -16,36 +16,52 @@
     <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
     [endif]-->
+
     <style>
-        .row>div {
-            border: 1px solid red;
+        #exampleInputName2 {
+            width: 100%;
+        }
+        .search-area {
+            margin-top: 10px;
         }
     </style>
-
 </head>
 <body>
-<div class="container">
-    <div class="row">
-        <div class="col-lg-1 col-md-2 col-sm-3 ">栅格</div>
-        <div class="col-lg-1 col-md-2 col-sm-3 ">栅格</div>
-        <div class="col-lg-1 col-md-2 col-sm-3 ">栅格</div>
-        <div class="col-lg-1 col-md-2 col-sm-3 ">栅格</div>
-        <div class="col-lg-1 col-md-2 col-sm-3 ">栅格</div>
-        <div class="col-lg-1 col-md-2 col-sm-3 ">栅格</div>
-        <div class="col-lg-1 col-md-2 col-sm-3 ">栅格</div>
-        <div class="col-lg-1 col-md-2 col-sm-3 ">栅格</div>
-        <div class="col-lg-1 col-md-2 col-sm-3 ">栅格</div>
-        <div class="col-lg-1 col-md-2 col-sm-3 ">栅格</div>
-        <div class="col-lg-1 col-md-2 col-sm-3 ">栅格</div>
-        <div class="col-lg-1 col-md-2 col-sm-3 ">栅格</div>
-
+<!--    页首-->
+    <div class="container-fluid">
+        <div class="row">
+            <img src="./img/top_banner.jpg" alt="" class="img-responsive center-block">
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-3">
+                <img src="./img/logo.jpg" alt="">
+            </div>
+            <div class="col-sm-12 col-md-6 text-center search-area">
+                <form class="form-inline">
+                    <div class="form-group col-sm-8">
+                        <label for="exampleInputName2" class="sr-only"></label>
+                        <input type="text" class="form-control col-sm-12" id="exampleInputName2" placeholder="Jane Doe">
+                    </div>
+                    <button type="submit" class="btn btn-success col-sm-2">Send invitation</button>
+                </form>
+            </div>
+            <div class="col-sm-12 col-md-3">
+                <img src="./img/hotel_tel.png" alt="">
+            </div>
+        </div>
     </div>
 
-</div>
+    
 
 <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
 <script src="./js/jquery-3.2.1.min.js"></script>
 <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
 <script src="./js/bootstrap.min.js"></script>
+
+<script>
+
+
+</script>
+
 </body>
 </html>
