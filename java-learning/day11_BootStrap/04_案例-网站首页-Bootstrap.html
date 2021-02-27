@@ -24,6 +24,23 @@
         .search-area {
             margin-top: 15px;
         }
+        .search-box{
+            padding-right: 0px;
+        }
+        .search-text{
+            border: 1px solid #ffb700;
+            padding-right: 0px;
+            border-radius:0px;
+            height: 40px;
+        }
+        .search-btn{
+            border: 0px;
+            background-color: #ffb700;
+            padding-left: 0px;
+            border-radius:0px;
+            height: 40px;
+            width: 100px;
+        }
         hr{
             border: 1px solid orange;
             margin: 0;
@@ -56,11 +73,11 @@
             </div>
             <div class="col-sm-12 col-md-6 text-center search-area">
                 <form class="form-inline">
-                    <div class="form-group col-sm-10">
+                    <div class="form-group col-sm-10 search-box">
                         <label for="exampleInputName2" class="sr-only"></label>
-                        <input type="text" class="form-control col-sm-12" id="exampleInputName2" placeholder="Jane Doe">
+                        <input type="text" class="form-control col-sm-12 search-text" id="exampleInputName2" placeholder="请输入旅游路线">
                     </div>
-                    <button type="submit" class="btn btn-success col-sm-2">Send invitation</button>
+                    <button type="submit" class="btn btn-submit col-sm-2 search-btn">搜索</button>
                 </form>
             </div>
             <div class="col-sm-12 col-md-3">

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--<!DOCTYPE students SYSTEM "students.dtd">-->
+
+<students>
+    <student number="z001">
+        <name>zhangsan</name>
+        <age>23</age>
+        <sex>male</sex>
+    </student>
+
+    <student number="z002">
+        <name>bob</name>
+        <age>21</age>
+        <sex>female</sex>
+    </student>
+</students>

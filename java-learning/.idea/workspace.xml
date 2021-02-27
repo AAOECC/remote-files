@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38726c78-dc19-4edc-a74d-83b548b78bae" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day11_BootStrap/04_案例-网站首页-Bootstrap.html" beforeDir="false" afterPath="$PROJECT_DIR$/day11_BootStrap/04_案例-网站首页-Bootstrap.html" afterDir="false" />
     </list>
@@ -13,9 +14,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -51,7 +52,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="js.last.introduce.type" value="VAR" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/day11_BootStrap" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/day12_xml/lib" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -59,17 +60,41 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\remote-files\java-learning\day12_xml\lib" />
       <recent name="D:\workspace\remote-files\java-learning\day11_BootStrap" />
       <recent name="C:\WorkSpaces\remote-files\java-learning\day11_BootStrap" />
       <recent name="C:\WorkSpaces\remote-files\java-learning\day11_BootStrap\js" />
       <recent name="D:\workspace\remote-files\java-learning\day08_javascript\img\3" />
-      <recent name="D:\workspace\remote-files\java-learning\day08_javascript\img\2" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="domain" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.JdbcTemplateDemo2.test7">
+  <component name="RunManager" selected="Application.JsoupDemo01">
+    <configuration name="JsoupDemo01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jsoup.JsoupDemo01" />
+      <module name="day12_xml" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jsoup.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JdbcTemplateDemo2.Test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="day06_dataSource_jdbcTemplate" />
       <extension name="coverage">
@@ -118,22 +143,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JdbcTemplateDemo2.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="day06_dataSource_jdbcTemplate" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="jdbcTemplaste.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="jdbcTemplaste" />
-      <option name="MAIN_CLASS_NAME" value="jdbcTemplaste.JdbcTemplateDemo2" />
-      <option name="METHOD_NAME" value="test3" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="JdbcTemplateDemo2.test7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="day06_dataSource_jdbcTemplate" />
       <extension name="coverage">
@@ -152,15 +161,15 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JsoupDemo01" />
         <item itemvalue="JUnit.JdbcTemplateDemo2.test7" />
         <item itemvalue="JUnit.JdbcTemplateDemo2.Test6" />
         <item itemvalue="JUnit.JdbcTemplateDemo2.Test5" />
         <item itemvalue="JUnit.JdbcTemplateDemo2.Test4" />
-        <item itemvalue="JUnit.JdbcTemplateDemo2.test3" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="StructureViewFactory">
     <option name="ACTIVE_ACTIONS" value=",ALPHA_COMPARATOR" />
   </component>
@@ -213,11 +222,15 @@
       <workItem from="1613692934502" duration="723000" />
       <workItem from="1613716432177" duration="6215000" />
       <workItem from="1613732614172" duration="7041000" />
+      <workItem from="1613778274236" duration="2265000" />
+      <workItem from="1614060519632" duration="2166000" />
+      <workItem from="1614148759910" duration="623000" />
+      <workItem from="1614218794842" duration="2874000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
