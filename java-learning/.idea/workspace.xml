@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38726c78-dc19-4edc-a74d-83b548b78bae" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day11_BootStrap/04_案例-网站首页-Bootstrap.html" beforeDir="false" afterPath="$PROJECT_DIR$/day11_BootStrap/04_案例-网站首页-Bootstrap.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day12_xml/day12_xml.iml" beforeDir="false" afterPath="$PROJECT_DIR$/day12_xml/day12_xml.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day12_xml/src/students.xml" beforeDir="false" afterPath="$PROJECT_DIR$/day12_xml/src/students.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +70,7 @@
       <recent name="domain" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.JsoupDemo01">
+  <component name="RunManager" selected="Application.JsoupDemo03">
     <configuration name="JsoupDemo01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="jsoup.JsoupDemo01" />
       <module name="day12_xml" />
@@ -84,29 +84,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration name="JsoupDemo03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jsoup.JsoupDemo03" />
+      <module name="day12_xml" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jsoup.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JdbcTemplateDemo2.Test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="day06_dataSource_jdbcTemplate" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="jdbcTemplaste.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="jdbcTemplaste" />
-      <option name="MAIN_CLASS_NAME" value="jdbcTemplaste.JdbcTemplateDemo2" />
-      <option name="METHOD_NAME" value="Test4" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -161,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JsoupDemo03" />
         <item itemvalue="Application.JsoupDemo01" />
         <item itemvalue="JUnit.JdbcTemplateDemo2.test7" />
         <item itemvalue="JUnit.JdbcTemplateDemo2.Test6" />
         <item itemvalue="JUnit.JdbcTemplateDemo2.Test5" />
-        <item itemvalue="JUnit.JdbcTemplateDemo2.Test4" />
       </list>
     </recent_temporary>
   </component>
@@ -226,6 +225,7 @@
       <workItem from="1614060519632" duration="2166000" />
       <workItem from="1614148759910" duration="623000" />
       <workItem from="1614218794842" duration="2874000" />
+      <workItem from="1614564602743" duration="4135000" />
     </task>
     <servers />
   </component>

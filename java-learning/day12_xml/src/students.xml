@@ -3,7 +3,10 @@
 
 <students>
     <student number="z001">
-        <name>zhangsan</name>
+        <name id="itcast">
+            <xing>zhang</xing>
+            <ming>san</ming>
+        </name>
         <age>23</age>
         <sex>male</sex>
     </student>
