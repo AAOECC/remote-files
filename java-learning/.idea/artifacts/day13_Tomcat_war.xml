@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="war" name="day13_Tomcat:war">
-    <output-path>$PROJECT_DIR$/../day13_Tomcat/target</output-path>
+    <output-path>$PROJECT_DIR$/day13_Tomcat/target</output-path>
     <properties id="maven-jee-properties">
       <options>
         <module>day13_Tomcat</module>

@@ -7,7 +7,7 @@ public class ServletDemo1 implements Servlet {
 
     @Override
     public void init(ServletConfig config) throws ServletException {
-
+        System.out.println("method : init()....");
     }
 
     @Override
@@ -17,7 +17,7 @@ public class ServletDemo1 implements Servlet {
 
     @Override
     public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
-        System.out.println("method : service();");
+        System.out.println("method : service()....");
     }
 
     @Override
@@ -27,6 +27,6 @@ public class ServletDemo1 implements Servlet {
 
     @Override
     public void destroy() {
-
+        System.out.println("method : destroy()....");
     }
 }
