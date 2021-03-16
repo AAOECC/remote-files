@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+
+    <script>
+        window.onload = function () {
+            var checkCode_img = document.getElementById("checkCode_img");
+            var checkCode_a = document.getElementById("checkCode_a");
+            checkCode_img.onclick = function (){
+                var time = new Date().getTime();
+                checkCode_img.src = "/day15/checkCodeServlet?"+time;
+            }
+            checkCode_a.onclick = function (){
+                var time = new Date().getTime();
+                checkCode_img.src = "/day15/checkCodeServlet?"+time;
+            }
+        }
+    </script>
+</head>
+<body>
+<img id="checkCode_img" src="/day15/checkCodeServlet" alt="">
+<a id="checkCode_a" href="#">点击更换</a>
+</body>
+</html>

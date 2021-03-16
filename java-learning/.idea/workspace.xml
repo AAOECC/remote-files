@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="day13_Tomcat:war exploded" />
+      <artifact name="day16_cookie&amp;session:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -10,10 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38726c78-dc19-4edc-a74d-83b548b78bae" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fc20afc8-08da-456c-925e-351aca7d5546.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fc20afc8-08da-456c-925e-351aca7d5546.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day13_Tomcat/day13_Tomcat.iml" beforeDir="false" afterPath="$PROJECT_DIR$/day13_Tomcat/day13_Tomcat.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,34 +80,38 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="js.last.introduce.type" value="VAR" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/day15_response/web/img" />
+    <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\workspace\remote-files\java-learning\day12_xml\lib" />
-      <recent name="D:\workspace\remote-files\java-learning\day11_BootStrap" />
-      <recent name="C:\WorkSpaces\remote-files\java-learning\day11_BootStrap" />
-      <recent name="C:\WorkSpaces\remote-files\java-learning\day11_BootStrap\js" />
-      <recent name="D:\workspace\remote-files\java-learning\day08_javascript\img\3" />
+      <recent name="D:\workspace\remote-files\java-learning\day15_response\web\img" />
+      <recent name="D:\workspace\remote-files\java-learning\day15_response\src\utils" />
+      <recent name="D:\workspace\remote-files\java-learning\day14_servlet\web\main\webapp\WEB-INF\lib" />
+      <recent name="D:\workspace\remote-files\java-learning\day14_servlet\src\main\java\com\example\jdbc" />
+      <recent name="D:\workspace\remote-files\java-learning\day14_servlet\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\workspace\remote-files\java-learning\day14_servlet\src\main\webapp\WEB-INF" />
       <recent name="D:\workspace\remote-files\java-learning" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cookie" />
+      <recent name="com.example.web.login" />
+      <recent name="com.example.web.request" />
       <recent name="domain" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.56">
-    <configuration name="JsoupDemo01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jsoup.JsoupDemo01" />
-      <module name="day12_xml" />
+    <configuration name="JDBCUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.jdbc.JDBCUtils" />
+      <module name="day14_servlet" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="jsoup.*" />
+          <option name="PATTERN" value="com.example.jdbc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -125,18 +132,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
+    <configuration name="UserDao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.jdbc.dao.UserDao" />
+      <module name="day14_servlet" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.jdbc.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JdbcTemplateDemo2.Test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JdbcTemplateDemo2.Test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="day06_dataSource_jdbcTemplate" />
       <extension name="coverage">
         <pattern>
@@ -146,39 +155,17 @@
       </extension>
       <option name="PACKAGE_NAME" value="jdbcTemplaste" />
       <option name="MAIN_CLASS_NAME" value="jdbcTemplaste.JdbcTemplateDemo2" />
-      <option name="METHOD_NAME" value="Test5" />
+      <option name="METHOD_NAME" value="Test4" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JdbcTemplateDemo2.Test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="day06_dataSource_jdbcTemplate" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="jdbcTemplaste.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="jdbcTemplaste" />
-      <option name="MAIN_CLASS_NAME" value="jdbcTemplaste.JdbcTemplateDemo2" />
-      <option name="METHOD_NAME" value="Test6" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JdbcTemplateDemo2.test7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="day06_dataSource_jdbcTemplate" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="jdbcTemplaste.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="jdbcTemplaste" />
-      <option name="MAIN_CLASS_NAME" value="jdbcTemplaste.JdbcTemplateDemo2" />
-      <option name="METHOD_NAME" value="test7" />
+    <configuration name="UserDaoTest.loginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day14_servlet" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="UserDaoTest" />
+      <option name="METHOD_NAME" value="loginTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -186,15 +173,18 @@
     </configuration>
     <configuration name="Tomcat 8.5.56" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.56" ALTERNATIVE_JRE_ENABLED="false">
       <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
       <deployment>
-        <artifact name="day13_Tomcat:war exploded">
+        <artifact name="day16_cookie&amp;session:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/" />
+            <option name="CONTEXT_PATH" value="/day16" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="d2dc5a01-d974-41d3-8461-ac5e78e1dd1f" />
+        <option name="HTTP_PORT" value="80" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -267,7 +257,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="day13_Tomcat:war exploded" />
+          <artifact name="day16_cookie&amp;session:war exploded" />
         </option>
       </method>
     </configuration>
@@ -350,20 +340,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.JsoupDemo01" />
       <item itemvalue="Application.JsoupDemo03" />
-      <item itemvalue="JUnit.JdbcTemplateDemo2.Test5" />
-      <item itemvalue="JUnit.JdbcTemplateDemo2.Test6" />
-      <item itemvalue="JUnit.JdbcTemplateDemo2.test7" />
+      <item itemvalue="Application.UserDao" />
+      <item itemvalue="Application.JDBCUtils" />
+      <item itemvalue="JUnit.JdbcTemplateDemo2.Test4" />
+      <item itemvalue="JUnit.UserDaoTest.loginTest" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.56" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserDaoTest.loginTest" />
+        <item itemvalue="Application.UserDao" />
+        <item itemvalue="Application.JDBCUtils" />
+        <item itemvalue="JUnit.JdbcTemplateDemo2.Test4" />
         <item itemvalue="Application.JsoupDemo03" />
-        <item itemvalue="Application.JsoupDemo01" />
-        <item itemvalue="JUnit.JdbcTemplateDemo2.test7" />
-        <item itemvalue="JUnit.JdbcTemplateDemo2.Test6" />
-        <item itemvalue="JUnit.JdbcTemplateDemo2.Test5" />
       </list>
     </recent_temporary>
   </component>
@@ -429,7 +419,18 @@
       <workItem from="1614668245960" duration="2088000" />
       <workItem from="1614671029768" duration="329000" />
       <workItem from="1614671622971" duration="473000" />
-      <workItem from="1614672114656" duration="4114000" />
+      <workItem from="1614672114656" duration="4271000" />
+      <workItem from="1614734399598" duration="466000" />
+      <workItem from="1614825840206" duration="7723000" />
+      <workItem from="1614907287047" duration="967000" />
+      <workItem from="1614927480267" duration="724000" />
+      <workItem from="1615016450959" duration="1075000" />
+      <workItem from="1615182843932" duration="9816000" />
+      <workItem from="1615251854642" duration="6575000" />
+      <workItem from="1615269553860" duration="4475000" />
+      <workItem from="1615334294836" duration="1111000" />
+      <workItem from="1615423449612" duration="9071000" />
+      <workItem from="1615610837358" duration="7736000" />
     </task>
     <servers />
   </component>
@@ -447,5 +448,15 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

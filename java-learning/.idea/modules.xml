@@ -10,6 +10,9 @@
       <module fileurl="file://$PROJECT_DIR$/day11_BootStrap/day11_BootStrap.iml" filepath="$PROJECT_DIR$/day11_BootStrap/day11_BootStrap.iml" />
       <module fileurl="file://$PROJECT_DIR$/day12_xml/day12_xml.iml" filepath="$PROJECT_DIR$/day12_xml/day12_xml.iml" />
       <module fileurl="file://$PROJECT_DIR$/day13_Tomcat/day13_Tomcat.iml" filepath="$PROJECT_DIR$/day13_Tomcat/day13_Tomcat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day14_servlet/day14_servlet.iml" filepath="$PROJECT_DIR$/day14_servlet/day14_servlet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day15_response/day15_response.iml" filepath="$PROJECT_DIR$/day15_response/day15_response.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day16_cookie&amp;session/day16_cookie&amp;session.iml" filepath="$PROJECT_DIR$/day16_cookie&amp;session/day16_cookie&amp;session.iml" />
     </modules>
   </component>
 </project>
