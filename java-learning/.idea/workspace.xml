@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="day16_cookie&amp;session:war exploded" />
+      <artifact name="day17_case:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -10,13 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38726c78-dc19-4edc-a74d-83b548b78bae" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/fc20afc8-08da-456c-925e-351aca7d5546.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fc20afc8-08da-456c-925e-351aca7d5546.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day13_Tomcat/day13_Tomcat.iml" beforeDir="false" afterPath="$PROJECT_DIR$/day13_Tomcat/day13_Tomcat.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day16_cookie&amp;session/day16_cookie&amp;session.iml" beforeDir="false" afterPath="$PROJECT_DIR$/day16_cookie&amp;session/day16_cookie&amp;session.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day16_cookie&amp;session/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day16_cookie&amp;session/web/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +27,7 @@
       <list>
         <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="Jsp File" />
         <option value="Class" />
       </list>
     </option>
@@ -80,21 +80,22 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="js.last.introduce.type" value="VAR" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/day15_response/web/img" />
-    <property name="project.structure.last.edited" value="Facets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/day17_case/web" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\remote-files\java-learning\day17_case\web" />
+      <recent name="D:\workspace\remote-files\java-learning\day17_case\src" />
+      <recent name="D:\workspace\remote-files\java-learning\day17_case\web\WEB-INF\lib" />
+      <recent name="D:\workspace\remote-files\java-learning\day17_JSP\web\WEB-INF\lib" />
       <recent name="D:\workspace\remote-files\java-learning\day15_response\web\img" />
-      <recent name="D:\workspace\remote-files\java-learning\day15_response\src\utils" />
-      <recent name="D:\workspace\remote-files\java-learning\day14_servlet\web\main\webapp\WEB-INF\lib" />
-      <recent name="D:\workspace\remote-files\java-learning\day14_servlet\src\main\java\com\example\jdbc" />
-      <recent name="D:\workspace\remote-files\java-learning\day14_servlet\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\workspace\remote-files\java-learning\day17_JSP\web" />
       <recent name="D:\workspace\remote-files\java-learning\day14_servlet\src\main\webapp\WEB-INF" />
       <recent name="D:\workspace\remote-files\java-learning" />
     </key>
@@ -119,19 +120,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JsoupDemo03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jsoup.JsoupDemo03" />
-      <module name="day12_xml" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="jsoup.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UserDao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.jdbc.dao.UserDao" />
       <module name="day14_servlet" />
@@ -141,6 +129,35 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DaoTest.dbConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day17_case" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jdbc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="jdbc" />
+      <option name="MAIN_CLASS_NAME" value="jdbc.DaoTest" />
+      <option name="METHOD_NAME" value="dbConnection" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -176,9 +193,9 @@
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
       <deployment>
-        <artifact name="day16_cookie&amp;session:war exploded">
+        <artifact name="day17_case:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/day16" />
+            <option name="CONTEXT_PATH" value="/day17" />
           </settings>
         </artifact>
       </deployment>
@@ -257,7 +274,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="day16_cookie&amp;session:war exploded" />
+          <artifact name="day17_case:war exploded" />
         </option>
       </method>
     </configuration>
@@ -340,20 +357,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.JsoupDemo03" />
       <item itemvalue="Application.UserDao" />
       <item itemvalue="Application.JDBCUtils" />
       <item itemvalue="JUnit.JdbcTemplateDemo2.Test4" />
       <item itemvalue="JUnit.UserDaoTest.loginTest" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.56" />
+      <item itemvalue="JUnit.DaoTest.dbConnection" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DaoTest.dbConnection" />
         <item itemvalue="JUnit.UserDaoTest.loginTest" />
         <item itemvalue="Application.UserDao" />
         <item itemvalue="Application.JDBCUtils" />
         <item itemvalue="JUnit.JdbcTemplateDemo2.Test4" />
-        <item itemvalue="Application.JsoupDemo03" />
       </list>
     </recent_temporary>
   </component>
@@ -431,6 +448,8 @@
       <workItem from="1615334294836" duration="1111000" />
       <workItem from="1615423449612" duration="9071000" />
       <workItem from="1615610837358" duration="7736000" />
+      <workItem from="1615878548648" duration="3831000" />
+      <workItem from="1615947785403" duration="17860000" />
     </task>
     <servers />
   </component>

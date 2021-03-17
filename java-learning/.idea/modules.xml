@@ -13,6 +13,8 @@
       <module fileurl="file://$PROJECT_DIR$/day14_servlet/day14_servlet.iml" filepath="$PROJECT_DIR$/day14_servlet/day14_servlet.iml" />
       <module fileurl="file://$PROJECT_DIR$/day15_response/day15_response.iml" filepath="$PROJECT_DIR$/day15_response/day15_response.iml" />
       <module fileurl="file://$PROJECT_DIR$/day16_cookie&amp;session/day16_cookie&amp;session.iml" filepath="$PROJECT_DIR$/day16_cookie&amp;session/day16_cookie&amp;session.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day17_JSP/day17_JSP.iml" filepath="$PROJECT_DIR$/day17_JSP/day17_JSP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day17_case/day17_case.iml" filepath="$PROJECT_DIR$/day17_case/day17_case.iml" />
     </modules>
   </component>
 </project>
