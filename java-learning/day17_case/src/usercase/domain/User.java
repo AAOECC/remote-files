@@ -1,4 +1,4 @@
-package usercase.dao;
+package usercase.domain;
 
 public class User {
     private int id;

@@ -1,25 +1,32 @@
-package usercase.domain;
+package usercase.dao.impl;
 
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
-import usercase.dao.User;
+import usercase.dao.UserDao;
+import usercase.domain.User;
 import usercase.util.JDBCUtil;
 
 import java.util.List;
-import java.util.Map;
 
-public class UserDao {
+public class UserDaoImpl implements UserDao {
     private JdbcTemplate jdbcTemplate = new JdbcTemplate(JDBCUtil.getDataSource());
 
     /**
      * User表中查询所有数据
      * @return
      */
-    public List<User> getAllUser(){
+    @Override
+    public List<User> findAll(){
         String sql = "select * from user";
 
         List<User> userList = jdbcTemplate.query(sql, new BeanPropertyRowMapper<User>(User.class));
         return userList;
+    }
+
+    @Override
+    public User findUser(User user) {
+        String sql = "select * from user where id=?";
+        return jdbcTemplate.queryForObject(sql, new BeanPropertyRowMapper<User>(User.class), user.getId());
     }
 
     /**

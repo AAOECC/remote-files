@@ -1,8 +1,9 @@
-package usercase.web;
+package usercase.web.servlet;
 
 import org.apache.commons.beanutils.BeanUtils;
-import org.springframework.jdbc.core.BeanPropertyRowMapper;
-import usercase.dao.User;
+import usercase.domain.User;
+import usercase.service.UserService;
+import usercase.service.impl.UserServiceImpl;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -13,28 +14,32 @@ import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Map;
 
-/**
- * 接收请求，转发到合适的服务
- */
-@WebServlet(name="ControlServlet", urlPatterns="/controlServlet")
-public class ControlServlet extends HttpServlet {
-    private User user;
+@WebServlet(name="AddUserServlet", urlPatterns="/addUserServlet")
+public class AddUserServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("utf-8");
-        //接收数据，封装为User对象
+
+        //取得输入的数据
         Map<String, String[]> parameterMap = request.getParameterMap();
+        //封装成User对象
+        User addUser = new User();
         try {
-            BeanUtils.populate(user,parameterMap);
+            BeanUtils.populate(addUser,parameterMap);
         } catch (IllegalAccessException | InvocationTargetException e) {
             e.printStackTrace();
         }
+        //调用service进行增加user
+        UserService userService = new UserServiceImpl();
+        boolean b = userService.addUser(addUser);
+        //请求转发到到list.jsp页面
+        response.sendRedirect(request.getContextPath()+"/listServlet");
 
     }
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        this.doPost(request, response);
+        this.doPost(request,response);
     }
 }
