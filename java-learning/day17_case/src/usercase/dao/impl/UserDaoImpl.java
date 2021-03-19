@@ -23,6 +23,12 @@ public class UserDaoImpl implements UserDao {
         return userList;
     }
 
+    @Override
+    public User findUser(User user) {
+        String sql = "select * from user where id=?";
+        return jdbcTemplate.queryForObject(sql, new BeanPropertyRowMapper<User>(User.class), user.getId());
+    }
+
     /**
      * User表中添加一列数据
      * @param user

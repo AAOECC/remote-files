@@ -1,6 +1,11 @@
-<!-- HTML5文档-->
-<!DOCTYPE html>
-<!-- 网页使用的语言 -->
+<%--
+  Created by IntelliJ IDEA.
+  User: lenovo
+  Date: 2021/3/19
+  Time: 9:39
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html lang="zh-CN">
 <head>
     <!-- 指定字符集 -->
@@ -20,30 +25,33 @@
     <script src="js/jquery-2.1.0.min.js"></script>
     <!-- 3. 导入bootstrap的js文件 -->
     <script src="js/bootstrap.min.js"></script>
+
 </head>
 <body>
 <div class="container">
     <center><h3>添加联系人页面</h3></center>
-    <form action="" method="post">
+    <form action="${pageContext.request.contextPath}/addUserServlet" method="post">
         <div class="form-group">
             <label for="name">姓名：</label>
-            <input type="text" class="form-control" id="name" name="name" placeholder="请输入姓名">
+            <input type="text" class="form-control input-group" id="name" name="name" placeholder="请输入姓名"
+                   required title="请输入姓名。。。">
         </div>
 
         <div class="form-group">
             <label>性别：</label>
-            <input type="radio" name="sex" value="男" checked="checked"/>男
-            <input type="radio" name="sex" value="女"/>女
+            <input type="radio" name="gender" value="男" checked="checked"/>男
+            <input type="radio" name="gender" value="女"/>女
         </div>
 
         <div class="form-group">
             <label for="age">年龄：</label>
-            <input type="text" class="form-control" id="age" name="age" placeholder="请输入年龄">
+            <input type="text" class="form-control" id="age" name="age" placeholder="请输入年龄"
+                   required pattern="^((1[0-5])|[1-9])?\d$" title="请输入年龄，在1-159之间">
         </div>
 
         <div class="form-group">
             <label for="address">籍贯：</label>
-            <select name="address" class="form-control" id="jiguan">
+            <select name="address" class="form-control"  id="address" required>
                 <option value="广东">广东</option>
                 <option value="广西">广西</option>
                 <option value="湖南">湖南</option>
@@ -52,15 +60,16 @@
 
         <div class="form-group">
             <label for="qq">QQ：</label>
-            <input type="text" class="form-control" name="qq" placeholder="请输入QQ号码"/>
+            <input type="text" class="form-control" name="qq" id="qq" placeholder="请输入QQ号码"
+                   required pattern="^[0-9]+$"/>
         </div>
 
         <div class="form-group">
             <label for="email">Email：</label>
-            <input type="text" class="form-control" name="email" placeholder="请输入邮箱地址"/>
+            <input type="email" class="form-control" name="email" id="email" placeholder="请输入邮箱地址" required/>
         </div>
 
-        <div class="form-group" style="text-align: center">
+        <div class="form-group" style="text-align: center" >
             <input class="btn btn-primary" type="submit" value="提交" />
             <input class="btn btn-default" type="reset" value="重置" />
             <input class="btn btn-default" type="button" value="返回" />
