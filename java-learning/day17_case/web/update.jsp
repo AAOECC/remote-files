@@ -25,7 +25,7 @@
 <body>
 <div class="container" style="width: 400px;">
     <h3 style="text-align: center;">修改联系人</h3>
-    <form action="UpdateUserServlet" method="post">
+    <form action="updateUserServlet" method="post">
         <div style="display: none">
             <input type="text" name="id" value="${requestScope.user.id}">
         </div>

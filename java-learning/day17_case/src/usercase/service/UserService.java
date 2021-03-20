@@ -1,5 +1,6 @@
 package usercase.service;
 
+import usercase.domain.PageBean;
 import usercase.domain.User;
 
 import java.util.List;
@@ -42,4 +43,25 @@ public interface UserService {
      */
     public boolean updateUser(User updateUser);
 
+    /**
+     * 删除选中的 数据
+     * 根据 ids
+     * @param ids
+     */
+    public void delCheckedUser(String[] ids);
+
+    /**
+     * 分页查询
+     * @param page
+     * @param count
+     * @return
+     */
+    public List<User> findByPage(int page,int count);
+
+    /**
+     * 查询总记录个数
+     *
+     * @return
+     */
+    public PageBean getPageBean(int count);
 }

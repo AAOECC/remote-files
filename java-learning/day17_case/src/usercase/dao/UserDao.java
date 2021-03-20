@@ -15,4 +15,18 @@ public interface UserDao {
     public boolean delUser(User delUser);
 
     public boolean updateUser(User updateUser);
+
+    /**
+     * 按页码查询
+     * @param begin
+     * @param count
+     * @return
+     */
+    public List<User> findByPage(int begin, int count);
+
+    /**
+     * 查询数据总量
+     * @return
+     */
+    public long countAll();
 }

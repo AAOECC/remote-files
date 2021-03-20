@@ -10,31 +10,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38726c78-dc19-4edc-a74d-83b548b78bae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/day17_case/src/usercase/dao/AdminDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day17_case/src/usercase/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day17_case/src/usercase/dao/impl/AdminDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day17_case/src/usercase/domain/Admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day17_case/src/usercase/service/LoginService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day17_case/src/usercase/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day17_case/src/usercase/service/impl/LoginServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day17_case/src/usercase/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day17_case/src/usercase/web/servlet/ListServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day17_case/src/usercase/web/servlet/VerifyCodeServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day17_case/test/service/TestAdminDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day17_case/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day17_case/web/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day17_case/web/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day17_case/web/update.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day17_case/src/usercase/web/servlet/DelCheckedUserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day17_case/web/js/list.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day17_case/day17_case.iml" beforeDir="false" afterPath="$PROJECT_DIR$/day17_case/day17_case.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day17_case/src/usercase/dao/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/day17_case/src/usercase/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day17_case/src/usercase/domain/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/day17_case/src/usercase/dao/impl/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day17_case/src/usercase/web/ControlServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/day17_case/src/usercase/web/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/day17_case/src/usercase/web/servlet/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day17_case/src/usercase/web/VerifyCodeServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/day17_case/test/jdbc/DaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/day17_case/test/jdbc/DaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day17_case/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day17_case/web/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day17_case/web/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day17_case/web/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day17_case/src/usercase/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/day17_case/src/usercase/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day17_case/src/usercase/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/day17_case/src/usercase/dao/impl/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day17_case/src/usercase/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/day17_case/src/usercase/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day17_case/src/usercase/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/day17_case/src/usercase/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day17_case/src/usercase/web/servlet/ListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/day17_case/src/usercase/web/servlet/ListServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day17_case/src/usercase/web/servlet/UpdateUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/day17_case/src/usercase/web/servlet/UpdateUserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day17_case/web/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day17_case/web/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day17_case/web/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day17_case/web/update.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day17_case/web/update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day17_case/web/update.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,8 +34,8 @@
       <list>
         <option value="JavaScript File" />
         <option value="HTML File" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -152,13 +140,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -470,6 +460,7 @@
       <workItem from="1616116696422" duration="5270000" />
       <workItem from="1616124594593" duration="3789000" />
       <workItem from="1616135115081" duration="7868000" />
+      <workItem from="1616223227292" duration="5829000" />
     </task>
     <servers />
   </component>

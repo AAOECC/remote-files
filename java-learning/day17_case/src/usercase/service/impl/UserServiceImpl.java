@@ -2,6 +2,7 @@ package usercase.service.impl;
 
 import usercase.dao.UserDao;
 import usercase.dao.impl.UserDaoImpl;
+import usercase.domain.PageBean;
 import usercase.domain.User;
 import usercase.service.UserService;
 
@@ -13,9 +14,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<User> findAll() {
 
-        List<User> userList = userDao.findAll();
-
-        return userList;
+        return userDao.findAll();
     }
 
     @Override
@@ -25,8 +24,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public boolean addUser(User addUser) {
-        boolean flag = userDao.addUser(addUser);
-        return flag;
+        return userDao.addUser(addUser);
     }
 
     @Override
@@ -37,5 +35,32 @@ public class UserServiceImpl implements UserService {
     @Override
     public boolean updateUser(User updateUser) {
         return userDao.updateUser(updateUser);
+    }
+
+    @Override
+    public void delCheckedUser(String[] ids) {
+        User delUser = new User();
+        for (String id : ids) {
+            delUser.setId(Integer.parseInt(id));
+            userDao.delUser(delUser);
+        }
+    }
+
+    @Override
+    public List<User> findByPage(int page, int count) {
+        int begin = (page-1)*count;
+        return userDao.findByPage(begin,count);
+    }
+
+    @Override
+    public PageBean getPageBean(int count) {
+        long userTotal = userDao.countAll();
+        int pageTotal = (int) (((5-(userTotal%count))+userTotal)/count);
+        System.out.println(userTotal/count);
+        System.out.println(pageTotal);
+        PageBean pageBean = new PageBean();
+        pageBean.setPageTotal(pageTotal);
+        pageBean.setUserTotal(userTotal);
+        return pageBean;
     }
 }

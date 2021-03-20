@@ -64,4 +64,18 @@ public class UserDaoImpl implements UserDao {
 
         return i>0;
     }
+
+    @Override
+    public List<User> findByPage(int begin, int count) {
+        String sql = "select * from user limit ?, ?";
+        List<User> userList = jdbcTemplate.query(sql, new BeanPropertyRowMapper<User>(User.class), begin, count);
+        return userList;
+    }
+
+    @Override
+    public long countAll() {
+        String sql = "select count(*) from user";
+        Long total = jdbcTemplate.queryForObject(sql, Long.class);
+        return total;
+    }
 }

@@ -36,14 +36,6 @@
         }
     </style>
 
-    <script>
-        function del_alert(id){
-            if(confirm("确定删除么")){
-                location.herf="${pageContext.request.contextPath}/delUserServlet?id="+id;
-            }
-        }
-    </script>
-
 </head>
 <body>
 <div class="container">
@@ -52,15 +44,15 @@
         <form class="form-inline" method="get" action="">
             <div class="form-group">
                 <label for="exampleInputName2">姓名</label>
-                <input type="text" class="form-control" id="exampleInputName2">
+                <input type="text" class="form-control" name="name" id="exampleInputName2">
             </div>
             <div class="form-group">
                 <label for="Addr">籍贯</label>
-                <input type="email" class="form-control" id="Addr" >
+                <input type="email" class="form-control" name="address" id="Addr" >
             </div>
             <div class="form-group">
                 <label for="InputEmail">邮箱</label>
-                <input type="email" class="form-control" id="InputEmail" >
+                <input type="email" class="form-control" name="email" id="InputEmail" >
             </div>
             <button type="submit" class="btn btn-default">查询</button>
         </form>
@@ -68,11 +60,11 @@
 
     <div style="float: right" id="right-control">
         <a class="btn btn-primary" href="${pageContext.request.contextPath}/add.jsp">添加联系人</a>
-        <a class="btn btn-primary" href="${pageContext.request.contextPath}/add.jsp">删除选中</a>
+        <a class="btn btn-primary" href="${pageContext.request.contextPath}/delCheckedUserServlet?" onclick="del_checked()" id="delChecked">删除选中</a>
     </div>
     <table border="1" class="table table-bordered table-hover">
         <tr class="success">
-            <th><input type="checkbox" class="checkbox-inline"></th>
+            <th><input type="checkbox" class="checkbox-inline" id="firstCheckbox" onclick="check_it()"></th>
             <th>编号</th>
             <th>姓名</th>
             <th>性别</th>
@@ -84,7 +76,7 @@
         </tr>
         <c:forEach items="${requestScope.userList}" var="user" varStatus="s">
             <tr>
-                <td><input type="checkbox" class="checkbox-inline"></td>
+                <td><input type="checkbox" class="checkbox-inline" user_id="${user.id}"></td>
                 <td>${s.count}</td>
                 <td>${user.name}</td>
                 <td>${user.gender}</td>
@@ -102,29 +94,50 @@
     <div style="float: left">
         <nav aria-label="Page navigation">
             <ul class="pagination">
-                <li>
-                    <a href="#" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
-                    </a>
-                </li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li>
-                    <a href="#" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                    </a>
-                </li>
+                <c:if test="${requestScope.pageBean.page == 1}">
+                    <li class="disabled">
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                </c:if>
+                <c:if test="${requestScope.pageBean.page != 1}">
+                    <li>
+                        <a href="${pageContext.request.contextPath}/listServlet?page=${requestScope.pageBean.page-1}" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                </c:if>
+                <c:forEach begin="1" end="${requestScope.pageBean.pageTotal}" step="1" varStatus="s">
+                    <c:if test="${requestScope.pageBean.page == s.count}">
+                        <li class="active"><a href="${pageContext.request.contextPath}/listServlet?page=${s.count}">${s.count}</a></li>
+                    </c:if>
+                    <c:if test="${requestScope.pageBean.page != s.count}">
+                        <li><a href="${pageContext.request.contextPath}/listServlet?page=${s.count}">${s.count}</a></li>
+                    </c:if>
+                </c:forEach>
+                <c:if test="${requestScope.pageBean.page == requestScope.pageBean.pageTotal}">
+                    <li class="disabled">
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </c:if>
+                <c:if test="${requestScope.pageBean.page != requestScope.pageBean.pageTotal}">
+                    <li>
+                        <a href="${pageContext.request.contextPath}/listServlet?page=${requestScope.pageBean.page+1}" aria-label="Previous">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </c:if>
             </ul>
         </nav>
     </div>
     <div style="float: left; margin-left: 10px">
-        <h3>共${requestScope.userList.size()}条数据，共<fmt:formatNumber type="number" value="${requestScope.userList.size()/5}" maxFractionDigits="0"/>页</h3>
+        <h3>共${requestScope.pageBean.userTotal}条数据 共${requestScope.pageBean.pageTotal}页</h3>
     </div>
 
 </div>
-
+<script src="js/list.js"></script>
 </body>
 </html>
