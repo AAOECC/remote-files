@@ -6,7 +6,10 @@ import usercase.dao.UserDao;
 import usercase.domain.User;
 import usercase.util.JDBCUtil;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 public class UserDaoImpl implements UserDao {
     private JdbcTemplate jdbcTemplate = new JdbcTemplate(JDBCUtil.getDataSource());
@@ -63,5 +66,59 @@ public class UserDaoImpl implements UserDao {
                 user.getGender(), user.getAge(), user.getAddress(), user.getQq(), user.getEmail(), user.getId());
 
         return i>0;
+    }
+
+    @Override
+    public List<User> findByPage(int begin, int count, Map<String,String[]> condition) {
+        String sql = "select * from user where 1=1";
+
+        Set<String> keys = condition.keySet();
+        StringBuilder sb = new StringBuilder(sql);
+        List<Object> values = new ArrayList<>();
+        for (String key : keys) {
+            if (key.equals("page") || key.equals("rows")){
+                continue;
+            }
+
+            String value = condition.get(key)[0];
+
+            if (!("".equals(value) || value==null)){
+                sb.append(" and "+key+" like ? ");
+                values.add("%"+value+"%");
+            }
+        }
+
+        sb.append(" limit ?, ?");
+        values.add(begin);
+        values.add(count);
+
+        List<User> userList = jdbcTemplate.query(sb.toString(), new BeanPropertyRowMapper<User>(User.class), values.toArray());
+        return userList;
+    }
+
+    @Override
+    public long countAll(Map<String,String[]> condition) {
+        String sql = "select count(*) from user where 1=1 ";
+        //拼接sql, 根据查询的参数名
+        Set<String> keys = condition.keySet();
+        StringBuilder sb = new StringBuilder(sql);
+        List<String> values = new ArrayList<>();
+        for (String key : keys) {
+            if (key.equals("page") || key.equals("rows")){
+                continue;
+            }
+
+            String value = condition.get(key)[0];
+
+            if (!("".equals(value) || value==null)){
+                sb.append(" and "+key+" like ? ");
+                values.add("%"+value+"%");
+            }
+        }
+        System.out.println(sb);
+        System.out.println(values);
+
+        Long total = jdbcTemplate.queryForObject(sb.toString(), Long.class,values.toArray());
+        return total;
     }
 }

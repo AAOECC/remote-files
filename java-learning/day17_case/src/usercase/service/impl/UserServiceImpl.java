@@ -2,10 +2,12 @@ package usercase.service.impl;
 
 import usercase.dao.UserDao;
 import usercase.dao.impl.UserDaoImpl;
+import usercase.domain.PageBean;
 import usercase.domain.User;
 import usercase.service.UserService;
 
 import java.util.List;
+import java.util.Map;
 
 public class UserServiceImpl implements UserService {
     UserDao userDao = new UserDaoImpl();
@@ -43,5 +45,23 @@ public class UserServiceImpl implements UserService {
             delUser.setId(Integer.parseInt(id));
             userDao.delUser(delUser);
         }
+    }
+
+    @Override
+    public List<User> findByPage(int page, int count, Map<String,String[]> condition) {
+        int begin = (page-1)*count;
+        return userDao.findByPage(begin,count, condition);
+    }
+
+    @Override
+    public PageBean getPageBean(int count, Map<String,String[]> condition) {
+        long userTotal = userDao.countAll(condition);
+        int pageTotal = (int) (((5-(userTotal%count))+userTotal)/count);
+        System.out.println(userTotal/count);
+        System.out.println(pageTotal);
+        PageBean pageBean = new PageBean();
+        pageBean.setPageTotal(pageTotal);
+        pageBean.setUserTotal(userTotal);
+        return pageBean;
     }
 }

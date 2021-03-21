@@ -2,7 +2,8 @@ function del_checked() {
     var delCheckedBtn = document.getElementById("delChecked");
     var checkboxes = document.getElementsByClassName("checkbox-inline");
     var hrefStr = delCheckedBtn.href;
-    for (var i = 1,count=0; i < checkboxes.length; i++) {
+    var count=0
+    for (var i = 1; i < checkboxes.length; i++) {
         if(checkboxes[i].checked===true){
             if(!(count === 0)){
                 hrefStr += "&"
@@ -10,6 +11,12 @@ function del_checked() {
             hrefStr += "id="+checkboxes[i].getAttribute("user_id");
             count++;
         }
+    }
+    if (count === 0){
+        alert("未选择数据！");
+        hrefStr = "";
+    }else if (confirm("确定删除么？")){
+        hrefStr = "";
     }
     delCheckedBtn.href = hrefStr;
 }
