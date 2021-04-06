@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>json</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function (){
+
+            var json = {
+                name:"zhangsan",
+                age:14,
+                gender:false
+            }
+
+            var json2 = {
+                persons:[
+                    {name:"zhangsan",age:15,gender: true},
+                    {name:"lisi",age:15,gender: true},
+                    {name:"wangwu",age:15,gender: false},
+                ]
+            }
+
+            var json3 = [
+                {name:"zhangsan",age:15,gender: true},
+                {name:"lisi",age:15,gender: true},
+                {name:"wangwu",age:15,gender: false},
+            ]
+
+            //|alert(json3[1].name);
+            for(key in json){
+                alert(key + ":" + json[key]);
+            }
+
+        })
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

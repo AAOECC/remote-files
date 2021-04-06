@@ -3,6 +3,7 @@ package usercase.dao;
 import usercase.domain.User;
 
 import java.util.List;
+import java.util.Map;
 
 public interface UserDao {
 
@@ -22,11 +23,11 @@ public interface UserDao {
      * @param count
      * @return
      */
-    public List<User> findByPage(int begin, int count);
+    public List<User> findByPage(int begin, int count,Map<String,String[]> condition);
 
     /**
      * 查询数据总量
      * @return
      */
-    public long countAll();
+    public long countAll(Map<String,String[]> condition);
 }

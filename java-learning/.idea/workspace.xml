@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="day17_case:war exploded" />
+      <artifact name="day22_ajax&amp;json:Web exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -10,19 +10,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38726c78-dc19-4edc-a74d-83b548b78bae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/day17_case/src/usercase/web/servlet/DelCheckedUserServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day17_case/web/js/list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/day17_JSP_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/day17_JSP_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/day17_case_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/day17_case_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fc20afc8-08da-456c-925e-351aca7d5546.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fc20afc8-08da-456c-925e-351aca7d5546.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/junit_4_10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/junit_4_10.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day14_servlet/day14_servlet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/day14_servlet/day14_servlet.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day15_response/day15_response.iml" beforeDir="false" afterPath="$PROJECT_DIR$/day15_response/day15_response.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day17_JSP/day17_JSP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/day17_JSP/day17_JSP.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day17_case/src/usercase/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/day17_case/src/usercase/dao/UserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day17_case/src/usercase/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/day17_case/src/usercase/dao/impl/UserDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day17_case/src/usercase/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/day17_case/src/usercase/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day17_case/src/usercase/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/day17_case/src/usercase/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day17_case/src/usercase/web/servlet/ListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/day17_case/src/usercase/web/servlet/ListServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day17_case/src/usercase/web/servlet/UpdateUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/day17_case/src/usercase/web/servlet/UpdateUserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day17_case/src/usercase/web/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/day17_case/src/usercase/web/servlet/LoginServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day17_case/web/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day17_case/web/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day17_case/web/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/day17_case/web/update.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/day17_case/web/update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day17_case/web/update.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,9 +40,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Jsp File" />
         <option value="JavaScript File" />
         <option value="HTML File" />
-        <option value="Jsp File" />
         <option value="Class" />
       </list>
     </option>
@@ -62,9 +70,13 @@
       <MavenGeneralSettings>
         <option name="localRepository" value="D:\workspace\maven\maven_repository" />
         <option name="mavenHome" value="D:\workspace\maven\apache-maven-3.5.2" />
-        <option name="userSettingsFile" value="D:\workspace\maven\apache-maven-3.6.3\conf\settings.xml" />
+        <option name="userSettingsFile" value="D:\workspace\maven\apache-maven-3.5.2\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="#JAVA_HOME" />
+    <option name="vmOptions" value="-Dfile.encoding=GB2312" />
   </component>
   <component name="ProjectId" id="1njWiQBanwTbp1b0B4mRBOqaEC7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -87,21 +99,23 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="js.last.introduce.type" value="VAR" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/day17_case/web" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\workspace\remote-files\java-learning\day17_case\web" />
-      <recent name="D:\workspace\remote-files\java-learning\day17_case\src" />
-      <recent name="D:\workspace\remote-files\java-learning\day17_case\web\WEB-INF\lib" />
-      <recent name="D:\workspace\remote-files\java-learning\day17_JSP\web\WEB-INF\lib" />
-      <recent name="D:\workspace\remote-files\java-learning\day15_response\web\img" />
+      <recent name="D:\workspace\remote-files\java-learning\day23_redis\web\WEB-INF\lib" />
+      <recent name="D:\workspace\remote-files\java-learning\day22_ajax&amp;json\web\WEB-INF\lib" />
+      <recent name="D:\workspace\remote-files\java-learning\day22_ajax&amp;json\js" />
+      <recent name="D:\workspace\remote-files\java-learning\day20_jquery\js" />
+      <recent name="D:\workspace\remote-files\java-learning\day20_jquery\高级" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\workspace\remote-files\java-learning\day22_ajax&amp;json\web" />
       <recent name="D:\workspace\remote-files\java-learning\day17_JSP\web" />
       <recent name="D:\workspace\remote-files\java-learning\day14_servlet\src\main\webapp\WEB-INF" />
       <recent name="D:\workspace\remote-files\java-learning" />
@@ -113,96 +127,114 @@
       <recent name="domain" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.56">
-    <configuration name="JDBCUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.jdbc.JDBCUtils" />
-      <module name="day14_servlet" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.jdbc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserDao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.jdbc.dao.UserDao" />
-      <module name="day14_servlet" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.jdbc.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn tomcat:run" />
+      <command value="mvn tomcat7:run" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.DaoTest.Test1">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DaoTest.dbConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="day17_case" />
+    <configuration name="DaoTest.Test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day24_maven" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="jdbc.*" />
+          <option name="PATTERN" value="dao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="jdbc" />
-      <option name="MAIN_CLASS_NAME" value="jdbc.DaoTest" />
-      <option name="METHOD_NAME" value="dbConnection" />
+      <option name="PACKAGE_NAME" value="dao" />
+      <option name="MAIN_CLASS_NAME" value="dao.DaoTest" />
+      <option name="METHOD_NAME" value="Test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JdbcTemplateDemo2.Test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="day06_dataSource_jdbcTemplate" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="jdbcTemplaste.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="jdbcTemplaste" />
-      <option name="MAIN_CLASS_NAME" value="jdbcTemplaste.JdbcTemplateDemo2" />
-      <option name="METHOD_NAME" value="Test4" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserDaoTest.loginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="day14_servlet" />
+    <configuration name="JedisTest.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day23_redis" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="UserDaoTest" />
-      <option name="METHOD_NAME" value="loginTest" />
+      <option name="MAIN_CLASS_NAME" value="JedisTest" />
+      <option name="METHOD_NAME" value="test01" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="JsonTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day22_ajax&amp;json" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JsonTest" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JsonTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day22_ajax&amp;json" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JsonTest" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JsonTest.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day22_ajax&amp;json" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JsonTest" />
+      <option name="METHOD_NAME" value="test4" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="debugrun" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="tomcat7:run" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/day24_maven" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
     </configuration>
     <configuration name="Tomcat 8.5.56" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.56" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:80/day22/" />
       <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
       <deployment>
-        <artifact name="day17_case:war exploded">
+        <artifact name="day22_ajax&amp;json:Web exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/day17" />
+            <option name="CONTEXT_PATH" value="/day22" />
           </settings>
         </artifact>
       </deployment>
@@ -281,7 +313,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="day17_case:war exploded" />
+          <artifact name="day22_ajax&amp;json:Web exploded" />
         </option>
       </method>
     </configuration>
@@ -364,20 +396,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.UserDao" />
-      <item itemvalue="Application.JDBCUtils" />
-      <item itemvalue="JUnit.JdbcTemplateDemo2.Test4" />
-      <item itemvalue="JUnit.UserDaoTest.loginTest" />
-      <item itemvalue="JUnit.DaoTest.dbConnection" />
+      <item itemvalue="JUnit.JsonTest.test2" />
+      <item itemvalue="JUnit.JsonTest.test3" />
+      <item itemvalue="JUnit.JsonTest.test4" />
+      <item itemvalue="JUnit.JedisTest.test01" />
+      <item itemvalue="Maven.debugrun" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.56" />
+      <item itemvalue="JUnit.DaoTest.Test1" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DaoTest.dbConnection" />
-        <item itemvalue="JUnit.UserDaoTest.loginTest" />
-        <item itemvalue="Application.UserDao" />
-        <item itemvalue="Application.JDBCUtils" />
-        <item itemvalue="JUnit.JdbcTemplateDemo2.Test4" />
+        <item itemvalue="JUnit.DaoTest.Test1" />
+        <item itemvalue="JUnit.JedisTest.test01" />
+        <item itemvalue="JUnit.JsonTest.test4" />
+        <item itemvalue="JUnit.JsonTest.test3" />
+        <item itemvalue="JUnit.JsonTest.test2" />
       </list>
     </recent_temporary>
   </component>
@@ -461,6 +494,27 @@
       <workItem from="1616124594593" duration="3789000" />
       <workItem from="1616135115081" duration="7868000" />
       <workItem from="1616223227292" duration="5829000" />
+      <workItem from="1616377855880" duration="705000" />
+      <workItem from="1616378684618" duration="40000" />
+      <workItem from="1616383324294" duration="6721000" />
+      <workItem from="1616404368486" duration="165000" />
+      <workItem from="1616485397238" duration="262000" />
+      <workItem from="1616485679818" duration="1001000" />
+      <workItem from="1616488404547" duration="3000000" />
+      <workItem from="1616548295426" duration="2225000" />
+      <workItem from="1616570483369" duration="1121000" />
+      <workItem from="1616641912505" duration="6235000" />
+      <workItem from="1616826200475" duration="1281000" />
+      <workItem from="1617004041502" duration="5522000" />
+      <workItem from="1617065605650" duration="15411000" />
+      <workItem from="1617159578954" duration="9559000" />
+      <workItem from="1617238526892" duration="4402000" />
+      <workItem from="1617346613852" duration="3273000" />
+      <workItem from="1617673595878" duration="5105000" />
+      <workItem from="1617681164631" duration="2547000" />
+      <workItem from="1617683897273" duration="5008000" />
+      <workItem from="1617693167794" duration="25000" />
+      <workItem from="1617693210421" duration="6872000" />
     </task>
     <servers />
   </component>

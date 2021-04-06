@@ -738,39 +738,61 @@ ALL PRIVILEGES|day14
 ALL PRIVILEGES|day17
 </ObjectGrants>
     </user>
-    <table id="230" parent="3" name="user"/>
-    <column id="231" parent="230" name="id">
+    <table id="230" parent="3" name="admin"/>
+    <table id="231" parent="3" name="user"/>
+    <column id="232" parent="230" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="232" parent="230" name="name">
+    <column id="233" parent="230" name="name">
       <Position>2</Position>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="233" parent="230" name="gender">
+    <column id="234" parent="230" name="password">
+      <Position>3</Position>
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="235" parent="230" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="236" parent="231" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="237" parent="231" name="name">
+      <Position>2</Position>
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="238" parent="231" name="gender">
       <Position>3</Position>
       <DataType>varchar(5)|0s</DataType>
     </column>
-    <column id="234" parent="230" name="age">
+    <column id="239" parent="231" name="age">
       <Position>4</Position>
       <DataType>int(11)|0s</DataType>
     </column>
-    <column id="235" parent="230" name="address">
+    <column id="240" parent="231" name="address">
       <Position>5</Position>
       <DataType>varchar(32)|0s</DataType>
     </column>
-    <column id="236" parent="230" name="qq">
+    <column id="241" parent="231" name="qq">
       <Position>6</Position>
       <DataType>varchar(20)|0s</DataType>
     </column>
-    <column id="237" parent="230" name="email">
+    <column id="242" parent="231" name="email">
       <Position>7</Position>
       <DataType>varchar(50)|0s</DataType>
     </column>
-    <key id="238" parent="230" name="PRIMARY">
+    <key id="243" parent="231" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>

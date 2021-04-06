@@ -41,18 +41,18 @@
 <div class="container">
     <h3 style="text-align: center">用户信息列表</h3>
     <div style="float: left">
-        <form class="form-inline" method="get" action="">
+        <form class="form-inline" method="get" action="${pageContext.request.contextPath}/listServlet">
             <div class="form-group">
                 <label for="exampleInputName2">姓名</label>
-                <input type="text" class="form-control" name="name" id="exampleInputName2">
+                <input type="text" class="form-control" name="name" id="exampleInputName2" value="${requestScope.condition.name[0]}">
             </div>
             <div class="form-group">
                 <label for="Addr">籍贯</label>
-                <input type="email" class="form-control" name="address" id="Addr" >
+                <input type="email" class="form-control" name="address" id="Addr" value="${requestScope.condition.address[0]}">
             </div>
             <div class="form-group">
                 <label for="InputEmail">邮箱</label>
-                <input type="email" class="form-control" name="email" id="InputEmail" >
+                <input type="text" class="form-control" name="email" id="InputEmail" value="${requestScope.condition.email[0]}">
             </div>
             <button type="submit" class="btn btn-default">查询</button>
         </form>
@@ -110,10 +110,14 @@
                 </c:if>
                 <c:forEach begin="1" end="${requestScope.pageBean.pageTotal}" step="1" varStatus="s">
                     <c:if test="${requestScope.pageBean.page == s.count}">
-                        <li class="active"><a href="${pageContext.request.contextPath}/listServlet?page=${s.count}">${s.count}</a></li>
+                        <li class="active">
+                            <a href="${pageContext.request.contextPath}/listServlet?page=${s.count}&name=${requestScope.condition.name[0]}&address=${requestScope.condition.address[0]}&email=${requestScope.condition.email[0]}">${s.count}</a>
+                        </li>
                     </c:if>
                     <c:if test="${requestScope.pageBean.page != s.count}">
-                        <li><a href="${pageContext.request.contextPath}/listServlet?page=${s.count}">${s.count}</a></li>
+                        <li>
+                            <a href="${pageContext.request.contextPath}/listServlet?page=${s.count}&name=${requestScope.condition.name[0]}&address=${requestScope.condition.address[0]}&email=${requestScope.condition.email[0]}">${s.count}</a>
+                        </li>
                     </c:if>
                 </c:forEach>
                 <c:if test="${requestScope.pageBean.page == requestScope.pageBean.pageTotal}">

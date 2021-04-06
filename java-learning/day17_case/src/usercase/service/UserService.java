@@ -1,9 +1,11 @@
 package usercase.service;
 
+import com.sun.org.apache.xpath.internal.objects.XString;
 import usercase.domain.PageBean;
 import usercase.domain.User;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * 用户业务操作
@@ -56,12 +58,12 @@ public interface UserService {
      * @param count
      * @return
      */
-    public List<User> findByPage(int page,int count);
+    public List<User> findByPage(int page, int count, Map<String,String[]> condition);
 
     /**
      * 查询总记录个数
      *
      * @return
      */
-    public PageBean getPageBean(int count);
+    public PageBean getPageBean(int count,Map<String,String[]> condition);
 }

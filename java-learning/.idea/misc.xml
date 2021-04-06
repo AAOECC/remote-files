@@ -3,13 +3,20 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/day13_Tomcat" />
     <file type="web" url="file://$PROJECT_DIR$/day14_servlet" />
+    <file type="web" url="file://$PROJECT_DIR$/day24_maven" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/../day13_Tomcat/pom.xml" />
         <option value="$PROJECT_DIR$/day14_servlet/pom.xml" />
+        <option value="$PROJECT_DIR$/day24_maven/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/day14_servlet/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">

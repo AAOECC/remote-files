@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <div id="div1">div1...</div>
+    <div id="div2">div2...</div>
+
+    <script>
+
+        // alert($("#div1"));
+        // alert($("#div2").html());
+
+        var $divs = $("div");
+        $divs.html("aaa");
+
+        var divs = document.getElementsByTagName("div");
+        for (var i = 0; i < divs.length; i++) {
+            divs[i].innerHTML = "bbb";
+        }
+
+    </script>
+</body>
+</html>

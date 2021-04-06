@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery ajax</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        function fun() {
+            // $.ajax({
+            //     url:"ajaxServlet",
+            //     data:{
+            //         name:"tom",
+            //         age:"25"
+            //     },
+            //     type:"post",
+            //     success:function (data){
+            //         $("#myDiv").html(data);
+            //     },
+            //     error:function (){
+            //         $("#myDiv").text("error");
+            //     },
+            //     dataType:"text"
+            // });
+
+            $.post("ajaxServlet",{
+                name:"jhon",
+                age:"22"
+            },function (data){
+                $("#myDiv").html(data);
+            },"text");
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <input type="button" value="异步请求" onclick="fun()">
+        <input type="text">
+    </div>
+    <div id="myDiv">
+
+    </div>
+</body>
+</html>

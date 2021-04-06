@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../../js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        $(function () {
+            /*点击事件
+            $("#name").click(function () {
+                $("#show").text("被点击了");
+            });
+             */
+
+            /*
+            $("#name").mouseover(function(){
+                $("#show").text("鼠标来了");
+            }).mouseout(function(){
+                $("#show").text("鼠标走了");
+            });
+
+             */
+
+            $("#name").focus();
+
+
+        });
+
+    </script>
+</head>
+<body>
+<input id="name" type="text" value="绑定点击事件">
+<div id="show"></div>
+</body>
+</html>

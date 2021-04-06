@@ -7,6 +7,7 @@ import usercase.domain.User;
 import usercase.service.UserService;
 
 import java.util.List;
+import java.util.Map;
 
 public class UserServiceImpl implements UserService {
     UserDao userDao = new UserDaoImpl();
@@ -47,14 +48,14 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public List<User> findByPage(int page, int count) {
+    public List<User> findByPage(int page, int count, Map<String,String[]> condition) {
         int begin = (page-1)*count;
-        return userDao.findByPage(begin,count);
+        return userDao.findByPage(begin,count, condition);
     }
 
     @Override
-    public PageBean getPageBean(int count) {
-        long userTotal = userDao.countAll();
+    public PageBean getPageBean(int count, Map<String,String[]> condition) {
+        long userTotal = userDao.countAll(condition);
         int pageTotal = (int) (((5-(userTotal%count))+userTotal)/count);
         System.out.println(userTotal/count);
         System.out.println(pageTotal);
