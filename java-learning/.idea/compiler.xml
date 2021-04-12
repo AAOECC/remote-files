@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="day13_Tomcat" />
+        <module name="day24_maven" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="day13_Tomcat" target="1.8" />
+      <module name="day24_maven" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

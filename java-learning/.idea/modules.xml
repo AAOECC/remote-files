@@ -15,6 +15,11 @@
       <module fileurl="file://$PROJECT_DIR$/day16_cookie&amp;session/day16_cookie&amp;session.iml" filepath="$PROJECT_DIR$/day16_cookie&amp;session/day16_cookie&amp;session.iml" />
       <module fileurl="file://$PROJECT_DIR$/day16_login/day16_login.iml" filepath="$PROJECT_DIR$/day16_login/day16_login.iml" />
       <module fileurl="file://$PROJECT_DIR$/day17_case/day17_case.iml" filepath="$PROJECT_DIR$/day17_case/day17_case.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day19_filter&amp;listener/day19_filter&amp;listener.iml" filepath="$PROJECT_DIR$/day19_filter&amp;listener/day19_filter&amp;listener.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day20_JQuery/day20_JQuery.iml" filepath="$PROJECT_DIR$/day20_JQuery/day20_JQuery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day22_json/day22_json.iml" filepath="$PROJECT_DIR$/day22_json/day22_json.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day23_redis/day23_redis.iml" filepath="$PROJECT_DIR$/day23_redis/day23_redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day24_maven/day24_maven.iml" filepath="$PROJECT_DIR$/day24_maven/day24_maven.iml" />
     </modules>
   </component>
 </project>

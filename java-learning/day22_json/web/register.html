@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html, body{
+            width: 100%;
+            height: 100%;
+        }
+        #outDiv{
+            text-align: center;
+            height: 100%;
+        }
+        #formDiv{
+            width: 40%;
+            height: 100%;
+            margin: 0 auto;
+        }
+    </style>
+
+    <script>
+        $(function (){
+
+            $("#user-name-label").focusout(function (){
+                var username = $("user-name-label").val();
+                $.post("/day22/findName",{username:"zhangsan"},function(data){
+                    $("#name_msg").text(data.nameMsg);
+                },"json");
+            });
+
+        });
+
+    </script>
+</head>
+<body>
+    <div style="height: 30%"></div>
+    <div id="outDiv">
+        <div id="formDiv">
+        <form action="">
+            <table id="formTable">
+                <tr>
+                    <td><label for="user-name-label">username : </label></td>
+                    <td><input type="text" name="username" id="user-name-label"></td>
+                    <td><div id="name_msg"></div></td>
+                </tr>
+                <tr>
+                    <td><label for="password-label">password : </label></td>
+                    <td><input type="password" name="username" id="password-label"></td>
+                    <td></td>
+                </tr>
+                <tr style="text-align: center">
+                    <td rowspan="2">
+                        <input type="button" value="提交">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        </div>
+    </div>
+    <div style="height: 30%"></div>
+</body>
+</html>

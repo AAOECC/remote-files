@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>province</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function () {
+            $.get("/day23/findProvince", function (data) {
+                for (var i = 0; i < data.length; i++) {
+                    var copy = $("#province_select option:first").clone();
+                    copy.val(data[i].id);
+                    copy.text(data[i].name);
+                    $("#province_select").append(copy);
+                }
+            }, "json");
+
+        });
+    </script>
+</head>
+<body>
+<select name="province" id="province_select">
+    <option>---请选择---</option>
+</select>
+</body>
+</html>
