@@ -14,6 +14,7 @@
       <module name="day13_Tomcat" target="1.8" />
       <module name="day14_servlet" target="1.8" />
       <module name="day24_maven" target="1.8" />
+      <module name="travel" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

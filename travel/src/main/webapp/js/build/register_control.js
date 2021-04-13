@@ -13,7 +13,12 @@ $(function () {
             && checkName() && checkTelephone() && checkDate() && checkCheck()) {
             //校验成功
             $.post("registerUser",$(this).serialize(),function(data){
-                if (!data.flag){
+                if (data.flag) {
+                    //注册成功，进行邮箱激活
+                    //进行注册页面跳转
+                    location.href = "/travel/register_ok.html"
+                } else {
+                    //注册失败，显示错误信息
                     $("#msg").text(data.errorMsg);
                 }
             },"json");

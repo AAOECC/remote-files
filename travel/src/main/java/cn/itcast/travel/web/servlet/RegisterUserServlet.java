@@ -64,6 +64,8 @@ public class RegisterUserServlet extends HttpServlet {
             mapper.writeValue(response.getWriter(), info);
         } else {
             //注册成功
+            info.setFlag(true);
+            mapper.writeValue(response.getWriter(), info);
 
         }
 

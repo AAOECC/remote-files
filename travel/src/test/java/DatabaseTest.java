@@ -11,7 +11,7 @@ public class DatabaseTest {
         UserDao userDao = new UserDaoImpl();
 
         User user = new User();
-        user.setName("test");
+        user.setUsername("test");
 
         User user1 = userDao.findByUsername(user);
         System.out.println(user1);
