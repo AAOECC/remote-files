@@ -1,4 +1,48 @@
 <!-- 头部 start -->
+<script>
+    $(function (){
+        //显示登陆后的用户名
+        $.get("user/findUser",{},function (data) {
+            //判断是否登陆
+            if (data != null) {
+                //登陆成功
+                const msg = "欢迎回来，" + data.name;
+                $("#username_span").html(msg);
+                $(".shortcut .login_out").css("display","none");
+            } else {
+                //登陆失败
+                $(".shortcut .login").css("display","none");
+            }
+        },"json");
+
+        //展示 Category 列表
+        var pageCid = -1;
+        var lis = "";
+        if (location.pathname === "/travel/index.html") {
+            lis = '<li class="nav-active"><a href="index.html">首页</a></li>';
+        } else {
+            lis = '<li><a href="index.html">首页</a></li>';
+            let search = location.search;
+            pageCid = search.split("=")[1];
+        }
+        $.get("category/findAll",{},function (data) {
+            let li;
+            for (let i=0; i<data.length; i++) {
+                if (i === pageCid) {
+                    alert(true);
+                    li = '<li class="nav-active"><a href="route_list.html?cid=' + data[i].cid + '">' + data[i].cname + '</a></li>';
+                } else {
+                    li = '<li><a href="route_list.html?cid=' + data[i].cid + '">' + data[i].cname + '</a></li>';
+                }
+                lis += li;
+            }
+            lis += '<li><a href="favoriterank.html">收藏排行榜</a></li>';
+            $("#category").html(lis);
+        });
+
+
+    });
+</script>
 <header id="header">
     <div class="top_banner">
         <img src="images/top_banner.jpg" alt="">
@@ -11,8 +55,8 @@
         </div>
         <!-- 登录状态  -->
         <div class="login">
-
-            <span>欢迎回来，admin</span><a href="myfavorite.html" class="collection">我的收藏</a><a href="javascript:">退出</a>
+            <span id="username_span"></span><a href="myfavorite.html" class="collection">我的收藏</a>
+            <a href="javascript:location.href='user/exit'">退出</a>
         </div>
     </div>
     <div class="header_wrap">
@@ -39,17 +83,17 @@
 <!-- 头部 end -->
 <!-- 首页导航 -->
 <div class="navitem">
-    <ul class="nav">
-        <li class="nav-active"><a href="index.html">首页</a></li>
-        <li><a href="route_list.html">门票</a></li>
-        <li><a href="route_list.html">酒店</a></li>
-        <li><a href="route_list.html">香港车票</a></li>
-        <li><a href="route_list.html">出境游</a></li>
-        <li><a href="route_list.html">国内游</a></li>
-        <li><a href="route_list.html">港澳游</a></li>
-        <li><a href="route_list.html">抱团定制</a></li>
-        <li><a href="route_list.html">全球自由行</a></li>
-        <li><a href="favoriterank.html">收藏排行榜</a></li>
+    <ul class="nav" id="category">
+<!--        <li class="nav-active"><a href="index.html">首页</a></li>-->
+<!--        <li><a href="route_list.html">门票</a></li>-->
+<!--        <li><a href="route_list.html">酒店</a></li>-->
+<!--        <li><a href="route_list.html">香港车票</a></li>-->
+<!--        <li><a href="route_list.html">出境游</a></li>-->
+<!--        <li><a href="route_list.html">国内游</a></li>-->
+<!--        <li><a href="route_list.html">港澳游</a></li>-->
+<!--        <li><a href="route_list.html">抱团定制</a></li>-->
+<!--        <li><a href="route_list.html">全球自由行</a></li>-->
+<!--        <li><a href="favoriterank.html">收藏排行榜</a></li>-->
     </ul>
 </div>
     

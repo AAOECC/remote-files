@@ -12,7 +12,7 @@ $(function () {
         if (checkUsername() && checkPassword() && checkEmail()
             && checkName() && checkTelephone() && checkDate() && checkCheck()) {
             //校验成功
-            $.post("registerUser",$(this).serialize(),function(data){
+            $.post("user/register",$(this).serialize(),function(data){
                 if (data.flag) {
                     //注册成功，进行邮箱激活
                     //进行注册页面跳转

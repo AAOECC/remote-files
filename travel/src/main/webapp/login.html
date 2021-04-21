@@ -22,7 +22,7 @@
     <script>
         $(function () {
             $("#login_btn").click(function () {
-                $.post("/travel/login",$("#loginForm").serialize(),function (data) {
+                $.post("user/login",$("#loginForm").serialize(),function (data) {
                     if (data.flag) {
                         //登陆成功
                         location.href = "http://localhost/travel/index.html";

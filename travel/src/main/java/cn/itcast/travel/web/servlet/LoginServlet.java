@@ -58,6 +58,8 @@ public class LoginServlet extends HttpServlet {
             info.setErrorMsg("尚未激活，请激活");
         } else {
             info.setFlag(true);
+            //封装 user 信息到 session 中
+            request.getSession().setAttribute("user",db_user);
         }
         //返回json
         mapper.writeValue(response.getOutputStream(),info);

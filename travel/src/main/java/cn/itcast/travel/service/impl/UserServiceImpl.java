@@ -39,7 +39,7 @@ public class UserServiceImpl implements UserService {
         if (flag){
             //数据库存储成功，发送以后邮件
             //发送激活邮件
-            String mailText = "<a href='http://localhost:80/travel/activeUser?code="+user.getCode()+ "'>点击激活【黑马旅游网】</a>";
+            String mailText = "<a href='http://localhost:80/travel/user/active?code="+user.getCode()+ "'>点击激活【黑马旅游网】</a>";
             MailUtils.sendMail(user.getEmail(),mailText,"激活邮件");
         }
 
