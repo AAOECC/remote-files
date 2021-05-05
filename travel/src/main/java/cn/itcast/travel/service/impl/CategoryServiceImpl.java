@@ -16,8 +16,10 @@ public class CategoryServiceImpl implements CategoryService {
     private final CategoryDao categoryDao = new CategoryDaoImpl();
 
     //private List<Category> all = null;
+
     /**
      * 查询该表所有数据
+     *
      * @return
      */
     @Override
@@ -26,6 +28,7 @@ public class CategoryServiceImpl implements CategoryService {
         /*
         数据存入redis 缓存中，从redis中读取
          */
+        //从redis中读取数据
         Jedis jedis = JedisUtil.getJedis();
         Set<String> categorys = jedis.zrange("category", 0, -1);
 
@@ -35,19 +38,36 @@ public class CategoryServiceImpl implements CategoryService {
             cg = categoryDao.findAll();
             //3.将数据存入 redis 缓存中
             for (Category category : cg) {
-                jedis.zadd("category",category.getCid(),category.getCname());
+                jedis.zadd("category", category.getCid(), category.getCname());
             }
         } else {
             //4.有数据，进行数据转换
             cg = new ArrayList<Category>();
             int i = 1;
-            for (String cname:categorys){
+            for (String cname : categorys) {
                 Category category = new Category();
                 category.setCid(i++);
                 category.setCname(cname);
                 cg.add(category);
             }
         }
+        JedisUtil.close(jedis);
         return cg;
+    }
+
+    @Override
+    public String findByCid(int cid) {
+        Jedis jedis = JedisUtil.getJedis();
+
+        Set<String> category = jedis.zrange("category", cid-1, cid-1);
+
+        if (category == null || category.size() == 0) {
+            return "error";
+        } else {
+            for (String s : category) {
+                return s;
+            }
+        }
+        return null;
     }
 }

@@ -12,5 +12,13 @@ public interface RouteService {
      * @param pageSize 每页展示条数
      * @return pageBean 对象
      */
-    public PageBean<Route> findByPage(int cid, int currentPage, int pageSize);
+    public PageBean<Route> findByPage(int cid, int currentPage, int pageSize, String rname);
+
+
+    /**
+     * 根据 路线rid 查找详细信息
+     * @param rid route:rid
+     * @return all obj Route message
+     */
+    public Route findOne(int rid);
 }

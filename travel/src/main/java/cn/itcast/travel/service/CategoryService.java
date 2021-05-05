@@ -11,4 +11,10 @@ public interface CategoryService {
      * @return
      */
     public List<Category> findAll();
+
+    /**
+     * 查询 对应的类别名
+     * @return
+     */
+    public String findByCid(int cid);
 }

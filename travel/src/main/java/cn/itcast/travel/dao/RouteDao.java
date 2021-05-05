@@ -12,11 +12,18 @@ public interface RouteDao {
      * @param
      * @return
      */
-    public List<Route> findByPage(int cid, int begin, int pageSize);
+    public List<Route> findByPage(int cid, int begin, int pageSize, String rname);
 
     /**
      * 查询表中总记录数
      * @return
      */
-    public int totalCount(int cid);
+    public int totalCount(int cid, String rname);
+
+    /**
+     * 查询 rid 对应的一条 route 信息
+     * @param rid
+     * @return
+     */
+    public Route findOne(int rid);
 }
