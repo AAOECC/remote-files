@@ -5,6 +5,8 @@ $(function () {
 
 });
 
+
+
 function detail_load(rid){
 
     $.get("route/findOne", {rid: rid}, function (result) {
@@ -146,15 +148,23 @@ function detail_load(rid){
             '            <p>咨询电话 : '+seller.consphone+'</p>\n' +
             '            <p>地址 ： '+seller.address+'</p>\n' +
             '        </div>\n';
+        var flag = isFavorite(rid);
+
+        var favoriteCount = favoriteTotal(rid);
+
         prosum_right += '<div class="pros_price">\n' +
             '            <p class="price"><strong>¥'+route.price+'</strong><span>起</span></p>\n' +
-            '            <p class="collect">\n' +
-            '                <a class="btn"><i class="glyphicon glyphicon-heart-empty"></i>点击收藏</a>\n' +
-            '\n' +
-            '                <a class="btn already" disabled="disabled"><i class="glyphicon glyphicon-heart-empty"></i>点击收藏</a>\n' +
-            '                <span>已收藏100次</span>\n' +
+            '            <p class="collect">\n';
+        console.log(flag);
+        if (flag){
+            prosum_right += '                <a class="btn already" id="favorite" disabled="disabled"><i class="glyphicon glyphicon-heart-empty"></i>点击收藏</a>\n';
+        }else{
+            prosum_right += '                <a class="btn" id="favorite" onclick="javascript:addFavorite()"><i class="glyphicon glyphicon-heart-empty"></i>点击收藏</a>\n';
+        }
+        prosum_right += '                <span>已收藏'+favoriteCount+'次</span>\n' +
             '            </p>\n' +
             '        </div>';
+
         $("#prosum_right").html(prosum_right);
 
         give();
@@ -170,3 +180,54 @@ function findCategory(cid){
     },"text");
 
 }
+
+function isFavorite(rid) {
+    let flag;
+    $.ajax({
+        method:"get",
+        url:"route/isFavorite",
+        data:{rid:rid},
+        async:false,
+        success:function (data) {
+            flag = data;
+        }
+    })
+    return flag;
+
+}
+
+function favoriteTotal(rid){
+    var count;
+    $.ajax({
+        method:"get",
+        url:"route/favoriteCount",
+        data:{rid:rid},
+        async:false,
+        success:function(data){
+            count = data;
+        }
+    })
+    return count;
+}
+
+function addFavorite(){
+    let rid = getParameter("rid");
+    console.log("rid:"+rid);
+    $.get("user/findUser", {}, function(user){
+        console.log("user:"+user);
+       if (user != null && user !== "null"){
+           $.get("route/addFavorite",{rid:rid},function(data){
+                $("#favorite").attr("disabled", "disabled").attr("class", "btn already");
+                let count = favoriteTotal(rid);
+                $("#favorite ~ span").html("已收藏 "+count+" 次");
+           });
+       } else{
+           alert("未登录，请先前往登陆！");
+           location.href="http://localhost/travel/login.html";
+       }
+    });
+
+
+}
+
+

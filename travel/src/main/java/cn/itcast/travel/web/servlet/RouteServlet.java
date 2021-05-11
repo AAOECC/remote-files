@@ -4,7 +4,10 @@ package cn.itcast.travel.web.servlet;
 import cn.itcast.travel.domain.PageBean;
 import cn.itcast.travel.domain.ResultInfo;
 import cn.itcast.travel.domain.Route;
+import cn.itcast.travel.domain.User;
+import cn.itcast.travel.service.FavoriteService;
 import cn.itcast.travel.service.RouteService;
+import cn.itcast.travel.service.impl.FavoriteServiceImpl;
 import cn.itcast.travel.service.impl.RouteServiceImpl;
 
 import javax.servlet.annotation.WebServlet;
@@ -16,6 +19,8 @@ import java.nio.charset.StandardCharsets;
 @WebServlet("/route/*")
 public class RouteServlet extends BaseServlet{
     private final RouteService routeService = new RouteServiceImpl();
+    private final FavoriteService favoriteService = new FavoriteServiceImpl();
+
     /**
      * 分页查询
      * @param request
@@ -80,5 +85,63 @@ public class RouteServlet extends BaseServlet{
         }
 
         writeValueByJson(info,response);
+    }
+
+    /**
+     * 是否收藏改路线
+     * @param request
+     * @param response
+     */
+    public void isFavorite(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        String rid_str = request.getParameter("rid");
+
+        int rid = 0;
+
+        if (rid_str != null && rid_str.length() > 0 && !"null".equals(rid_str)) {
+            rid = Integer.parseInt(rid_str);
+        }
+
+        User user = (User) request.getSession().getAttribute("user");
+
+        int uid = 0;
+        if (user != null){
+            uid = user.getUid();
+        }
+
+        boolean flag = favoriteService.isFavorite(rid, uid);
+        writeValueByJson(flag, response);
+
+    }
+
+    public void favoriteCount(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        String rid_str = request.getParameter("rid");
+        int rid = 0;
+
+        if (rid_str != null && rid_str.length() > 0 && !"null".equals(rid_str)) {
+            rid = Integer.parseInt(rid_str);
+        }
+
+        int count = favoriteService.favoriteCount(rid);
+        writeValueByJson(count, response);
+
+    }
+
+    public void addFavorite(HttpServletRequest request, HttpServletResponse response){
+        System.out.println("addFavorite is running...");
+        String rid_str = request.getParameter("rid");
+        int rid = 0;
+
+        if (rid_str != null && rid_str.length() > 0 && !"null".equals(rid_str)) {
+            rid = Integer.parseInt(rid_str);
+        }
+        User user = (User) request.getSession().getAttribute("user");
+
+        int uid = 0;
+        if (user != null){
+            uid = user.getUid();
+        }
+
+        favoriteService.addFavorite(rid, uid);
+
     }
 }
